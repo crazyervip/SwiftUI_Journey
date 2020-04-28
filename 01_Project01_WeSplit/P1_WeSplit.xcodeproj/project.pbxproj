@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		28406CD22456F51E00360339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD12456F51E00360339 /* Assets.xcassets */; };
 		28406CD52456F51E00360339 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD42456F51E00360339 /* Preview Assets.xcassets */; };
 		28406CD82456F51E00360339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD62456F51E00360339 /* LaunchScreen.storyboard */; };
+		28406CE52457E87D00360339 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 28406CE42457E87D00360339 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,7 @@
 		28406CD42456F51E00360339 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28406CD72456F51E00360339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28406CD92456F51E00360339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28406CDF245706D000360339 /* keyboardType2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType2.png; sourceTree = "<group>"; };
-		28406CE0245706D000360339 /* keyboardType1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType1.png; sourceTree = "<group>"; };
+		28406CE824581D1600360339 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28406CE52457E87D00360339 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +43,6 @@
 		28406CBF2456F51C00360339 = {
 			isa = PBXGroup;
 			children = (
-				28406CE0245706D000360339 /* keyboardType1.png */,
-				28406CDF245706D000360339 /* keyboardType2.png */,
 				28406CCA2456F51C00360339 /* P1_WeSplit */,
 				28406CC92456F51C00360339 /* Products */,
 			);
@@ -95,6 +94,9 @@
 			dependencies = (
 			);
 			name = P1_WeSplit;
+			packageProductDependencies = (
+				28406CE42457E87D00360339 /* Introspect */,
+			);
 			productName = P1_WeSplit;
 			productReference = 28406CC82456F51C00360339 /* P1_WeSplit.app */;
 			productType = "com.apple.product-type.application";
@@ -121,8 +123,12 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 28406CBF2456F51C00360339;
+			packageReferences = (
+				28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 28406CC92456F51C00360339 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +169,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				28406CD72456F51E00360339 /* Base */,
+				28406CE824581D1600360339 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -234,6 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -293,11 +302,12 @@
 				DEVELOPMENT_TEAM = XTMU73TLWU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = P1_WeSplit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.P1-WeSplit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.SwiftUI-Journey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,11 +323,12 @@
 				DEVELOPMENT_TEAM = XTMU73TLWU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = P1_WeSplit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.P1-WeSplit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.SwiftUI-Journey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28406CE42457E87D00360339 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28406CC02456F51C00360339 /* Project object */;
 }
