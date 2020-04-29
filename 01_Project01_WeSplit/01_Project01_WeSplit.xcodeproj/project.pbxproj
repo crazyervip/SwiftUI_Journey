@@ -26,6 +26,10 @@
 		28406CD72456F51E00360339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28406CD92456F51E00360339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28406CE824581D1600360339 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		28406D3C24597F4A00360339 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28406D3D24597F4A00360339 /* keyboardType2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType2.png; sourceTree = "<group>"; };
+		28406D3E24597F4A00360339 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
+		28406D3F24597F4A00360339 /* keyboardType1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,10 @@
 		28406CBF2456F51C00360339 = {
 			isa = PBXGroup;
 			children = (
+				28406D3F24597F4A00360339 /* keyboardType1.png */,
+				28406D3D24597F4A00360339 /* keyboardType2.png */,
+				28406D3C24597F4A00360339 /* README.md */,
+				28406D3E24597F4A00360339 /* screenshots */,
 				28406CCA2456F51C00360339 /* P1_WeSplit */,
 				28406CC92456F51C00360339 /* Products */,
 			);

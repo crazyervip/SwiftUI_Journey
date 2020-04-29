@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28406D142458878500360339 /* 02_C01_Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_C01_Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28406D142458878500360339 /* 02_ChallengeDay01_Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_ChallengeDay01_Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28406D172458878500360339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28406D192458878500360339 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28406D1B2458878500360339 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		28406D332458891B00360339 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
 		28406D352458893E00360339 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		28406D372458895B00360339 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		28406D3A24597EF900360339 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28406D3B24597F1400360339 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,8 @@
 		28406D0B2458878500360339 = {
 			isa = PBXGroup;
 			children = (
+				28406D3A24597EF900360339 /* README.md */,
+				28406D3B24597F1400360339 /* screenshots */,
 				28406D162458878500360339 /* 02_ChallengeDay01_Converter */,
 				28406D152458878500360339 /* Products */,
 			);
@@ -62,7 +66,7 @@
 		28406D152458878500360339 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28406D142458878500360339 /* 02_C01_Converter.app */,
+				28406D142458878500360339 /* 02_ChallengeDay01_Converter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28406D132458878500360339 /* 02_C01_Converter */ = {
+		28406D132458878500360339 /* 02_ChallengeDay01_Converter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28406D282458878700360339 /* Build configuration list for PBXNativeTarget "02_C01_Converter" */;
+			buildConfigurationList = 28406D282458878700360339 /* Build configuration list for PBXNativeTarget "02_ChallengeDay01_Converter" */;
 			buildPhases = (
 				28406D102458878500360339 /* Sources */,
 				28406D112458878500360339 /* Frameworks */,
@@ -119,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = 02_C01_Converter;
+			name = 02_ChallengeDay01_Converter;
 			productName = 02_ChallengeDay01_Converter;
-			productReference = 28406D142458878500360339 /* 02_C01_Converter.app */;
+			productReference = 28406D142458878500360339 /* 02_ChallengeDay01_Converter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28406D0F2458878500360339 /* Build configuration list for PBXProject "02_C01_Converter" */;
+			buildConfigurationList = 28406D0F2458878500360339 /* Build configuration list for PBXProject "02_ChallengeDay01_Converter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28406D132458878500360339 /* 02_C01_Converter */,
+				28406D132458878500360339 /* 02_ChallengeDay01_Converter */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28406D0F2458878500360339 /* Build configuration list for PBXProject "02_C01_Converter" */ = {
+		28406D0F2458878500360339 /* Build configuration list for PBXProject "02_ChallengeDay01_Converter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28406D262458878700360339 /* Debug */,
@@ -368,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28406D282458878700360339 /* Build configuration list for PBXNativeTarget "02_C01_Converter" */ = {
+		28406D282458878700360339 /* Build configuration list for PBXNativeTarget "02_ChallengeDay01_Converter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28406D292458878700360339 /* Debug */,

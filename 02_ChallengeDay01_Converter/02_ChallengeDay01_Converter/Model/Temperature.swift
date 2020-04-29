@@ -9,11 +9,11 @@
 import Foundation
 
 struct Temperature: UnitType {
-    static var name = "Temperature"
+    static var name = "温度"
     
-    private static let celsius = NamedUnit(name: "Celsius", unit: UnitTemperature.celsius)
-    private static let farenheit = NamedUnit(name: "Farenheit", unit: UnitTemperature.fahrenheit)
-    private static let kelvin = NamedUnit(name: "Kelvin", unit: UnitTemperature.kelvin)
+    private static let celsius = NamedUnit(name: "摄氏度", unit: UnitTemperature.celsius)
+    private static let farenheit = NamedUnit(name: "华氏度", unit: UnitTemperature.fahrenheit)
+    private static let kelvin = NamedUnit(name: "开尔文", unit: UnitTemperature.kelvin)
 
     static let units = [celsius, farenheit, kelvin]
 }

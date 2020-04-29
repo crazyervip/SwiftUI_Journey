@@ -86,7 +86,7 @@ struct ContentView: View {
                     Text("\(grandTotal, specifier: "%.2f") 元")
                 }
                 Section(header: Text("人均")) {
-                    // 显示 `Double` 小数点方法
+                    // 显示 `Double` 两位小数的方法
                     Text("\(totalPerPerson, specifier: "%.2f") 元")
                 }
             }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// List of units of the same type
+/// 同一大类单位的小类单位
 protocol UnitType {
     static var name: String { get }
     static var units: [NamedUnit] { get }
