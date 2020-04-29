@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28406CC82456F51C00360339 /* P1_WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P1_WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28406CC82456F51C00360339 /* 01_Project01_WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_Project01_WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28406CCB2456F51C00360339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28406CCD2456F51C00360339 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28406CCF2456F51C00360339 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		28406CC92456F51C00360339 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28406CC82456F51C00360339 /* P1_WeSplit.app */,
+				28406CC82456F51C00360339 /* 01_Project01_WeSplit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28406CC72456F51C00360339 /* P1_WeSplit */ = {
+		28406CC72456F51C00360339 /* 01_Project01_WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28406CDC2456F51E00360339 /* Build configuration list for PBXNativeTarget "P1_WeSplit" */;
+			buildConfigurationList = 28406CDC2456F51E00360339 /* Build configuration list for PBXNativeTarget "01_Project01_WeSplit" */;
 			buildPhases = (
 				28406CC42456F51C00360339 /* Sources */,
 				28406CC52456F51C00360339 /* Frameworks */,
@@ -93,12 +93,12 @@
 			);
 			dependencies = (
 			);
-			name = P1_WeSplit;
+			name = 01_Project01_WeSplit;
 			packageProductDependencies = (
 				28406CE42457E87D00360339 /* Introspect */,
 			);
 			productName = P1_WeSplit;
-			productReference = 28406CC82456F51C00360339 /* P1_WeSplit.app */;
+			productReference = 28406CC82456F51C00360339 /* 01_Project01_WeSplit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28406CC32456F51C00360339 /* Build configuration list for PBXProject "P1_WeSplit" */;
+			buildConfigurationList = 28406CC32456F51C00360339 /* Build configuration list for PBXProject "01_Project01_WeSplit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28406CC72456F51C00360339 /* P1_WeSplit */,
+				28406CC72456F51C00360339 /* 01_Project01_WeSplit */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28406CC32456F51C00360339 /* Build configuration list for PBXProject "P1_WeSplit" */ = {
+		28406CC32456F51C00360339 /* Build configuration list for PBXProject "01_Project01_WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28406CDA2456F51E00360339 /* Debug */,
@@ -347,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28406CDC2456F51E00360339 /* Build configuration list for PBXNativeTarget "P1_WeSplit" */ = {
+		28406CDC2456F51E00360339 /* Build configuration list for PBXNativeTarget "01_Project01_WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28406CDD2456F51E00360339 /* Debug */,
