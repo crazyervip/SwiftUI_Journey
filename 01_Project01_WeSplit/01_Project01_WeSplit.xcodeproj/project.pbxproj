@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		28406CD22456F51E00360339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD12456F51E00360339 /* Assets.xcassets */; };
 		28406CD52456F51E00360339 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD42456F51E00360339 /* Preview Assets.xcassets */; };
 		28406CD82456F51E00360339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28406CD62456F51E00360339 /* LaunchScreen.storyboard */; };
-		28406CE52457E87D00360339 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 28406CE42457E87D00360339 /* Introspect */; };
+		8C287A75533A241B6080E6F6 /* Pods_01_Project01_WeSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD19B11DEFBDA9DF8C5E5A4 /* Pods_01_Project01_WeSplit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,9 @@
 		28406D3D24597F4A00360339 /* keyboardType2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType2.png; sourceTree = "<group>"; };
 		28406D3E24597F4A00360339 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
 		28406D3F24597F4A00360339 /* keyboardType1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboardType1.png; sourceTree = "<group>"; };
+		78FB295CAD86CC472776177F /* Pods-01_Project01_WeSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01_Project01_WeSplit.release.xcconfig"; path = "Target Support Files/Pods-01_Project01_WeSplit/Pods-01_Project01_WeSplit.release.xcconfig"; sourceTree = "<group>"; };
+		DAD19B11DEFBDA9DF8C5E5A4 /* Pods_01_Project01_WeSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_01_Project01_WeSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF98E1F363EF3E362FBABE20 /* Pods-01_Project01_WeSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01_Project01_WeSplit.debug.xcconfig"; path = "Target Support Files/Pods-01_Project01_WeSplit/Pods-01_Project01_WeSplit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28406CE52457E87D00360339 /* Introspect in Frameworks */,
+				8C287A75533A241B6080E6F6 /* Pods_01_Project01_WeSplit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,8 @@
 				28406D3E24597F4A00360339 /* screenshots */,
 				28406CCA2456F51C00360339 /* P1_WeSplit */,
 				28406CC92456F51C00360339 /* Products */,
+				9F44F03CAC0518F169BAAFC0 /* Pods */,
+				37280CD47772B973AB918DCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +91,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37280CD47772B973AB918DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD19B11DEFBDA9DF8C5E5A4 /* Pods_01_Project01_WeSplit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F44F03CAC0518F169BAAFC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF98E1F363EF3E362FBABE20 /* Pods-01_Project01_WeSplit.debug.xcconfig */,
+				78FB295CAD86CC472776177F /* Pods-01_Project01_WeSplit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28406CDC2456F51E00360339 /* Build configuration list for PBXNativeTarget "01_Project01_WeSplit" */;
 			buildPhases = (
+				8B54A677A7F491A8DF3E27A5 /* [CP] Check Pods Manifest.lock */,
 				28406CC42456F51C00360339 /* Sources */,
 				28406CC52456F51C00360339 /* Frameworks */,
 				28406CC62456F51C00360339 /* Resources */,
+				3D869F97EF5DA1E800804509 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +127,6 @@
 			);
 			name = 01_Project01_WeSplit;
 			packageProductDependencies = (
-				28406CE42457E87D00360339 /* Introspect */,
 			);
 			productName = P1_WeSplit;
 			productReference = 28406CC82456F51C00360339 /* 01_Project01_WeSplit.app */;
@@ -135,7 +158,6 @@
 			);
 			mainGroup = 28406CBF2456F51C00360339;
 			packageReferences = (
-				28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 28406CC92456F51C00360339 /* Products */;
 			projectDirPath = "";
@@ -158,6 +180,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D869F97EF5DA1E800804509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-01_Project01_WeSplit/Pods-01_Project01_WeSplit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-01_Project01_WeSplit/Pods-01_Project01_WeSplit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-01_Project01_WeSplit/Pods-01_Project01_WeSplit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B54A677A7F491A8DF3E27A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-01_Project01_WeSplit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28406CC42456F51C00360339 /* Sources */ = {
@@ -303,6 +367,7 @@
 		};
 		28406CDD2456F51E00360339 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF98E1F363EF3E362FBABE20 /* Pods-01_Project01_WeSplit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +389,7 @@
 		};
 		28406CDE2456F51E00360339 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FB295CAD86CC472776177F /* Pods-01_Project01_WeSplit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,25 +431,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/timbersoftware/SwiftUI-Introspect.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		28406CE42457E87D00360339 /* Introspect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28406CE32457E87D00360339 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
-			productName = Introspect;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28406CC02456F51C00360339 /* Project object */;
 }

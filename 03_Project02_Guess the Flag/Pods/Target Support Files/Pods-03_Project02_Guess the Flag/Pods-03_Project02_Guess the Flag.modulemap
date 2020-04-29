@@ -1,0 +1,6 @@
+framework module Pods_03_Project02_Guess_the_Flag {
+  umbrella header "Pods-03_Project02_Guess the Flag-umbrella.h"
+
+  export *
+  module * { export * }
+}
