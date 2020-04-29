@@ -14,11 +14,11 @@
 
 种类               | 情况 
 :---               |  :---:  
-Projects | 1 / 19 
-Challenges | 3 / 57 
+Projects | 2 / 19 
+Challenges | 6 / 57 
 Milestone Projects | 0 / 6
 Challenge days     |  1 / 1
-Improvements | 🔷 5
+Improvements | 🔷 6
 
 ## 预览
 
@@ -26,9 +26,9 @@ Improvements | 🔷 5
 
 #### Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach
 
-项目需求   | 图例1 | 图例2 
-:----  |:---:  |  :---:
-<br/>>1. Add a header to the third section, <br/>saying “Amount per person”.<br/><br/>>2. Add another section showing the total amount for the check<br/> – i.e., the original amount plus tip value, <br/>without dividing by the number of people.<br/><br/>>3. Change the “Number of people” picker <br/>to be a text field, making sure to use the correct keyboard type.<br/>   |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" />
+ 项目需求                                                     |                            图例1                             |                            图例2                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
+ <br/>>1. Add a header to the third section, saying “Amount per person”.<br/><br/>>2. Add another section showing the total amount for the check<br/> – i.e., the original amount plus tip value, without dividing by the number of people.<br/>>3. Change the “Number of people” picker to be a text field, making sure to use the correct keyboard type.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
 
 #### Stepper, UITextField, UIApplication, TextField 配合 Stepper
 
@@ -48,9 +48,9 @@ Improvements | 🔷 5
 
 #### Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach
 
-项目需求   | 图例1 | 图例2 
-:----  |:---:  |  :---:
-<br/>**You need to build an app that <br/>handles unit conversions**: <br/><br/>users will select an input unit and an output unit, <br/>then enter a value,and see the output of the conversion.<br/>   |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ 项目需求                                                     |                            图例1                             |                            图例2                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
+ <br/>**You need to build an app that handles unit conversions**: <br/><br/>users will select an input unit and an output unit, then enter a value,and see the output of the conversion.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
 
 >Which units you choose are down to you, but you could choose one of these:
 >- Temperature conversion: users choose Celsius, Fahrenheit, or Kelvin.
@@ -72,7 +72,7 @@ Improvements | 🔷 5
 
 我的实现 & 改进               | 图例 
 :---               |  :---:
-**🔷设置显示小数最多为5位 <br/>且为零时省略<br/>○  `见底部 代码块`<br/><br/>**🔷通过上滑和下滑隐藏键盘**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化**<br/>○  `SF Symbol`<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+**设置显示小数最多为5位** <br/>且为零时省略<br/>○  `见底部 代码块`<br/><br/>**🔷通过上滑和下滑隐藏键盘**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化**<br/>○  `SF Symbol`<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
 
 
 ``` swift
@@ -87,14 +87,46 @@ Improvements | 🔷 5
     }
 ```
 
+### P2_猜国旗
 
+#### ZStack, VStack, Image, Alert
 
+ 项目需求                                                     |                            图例1                             |                            图例2                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
+ <br/>>1. Add an @State property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert.<br/><br/>>2. Show the player’s current score in a label directly below the flags.<br/><br/>>3. When someone chooses the wrong flag, tell them their mistake in your alert message<br/> – something like “Wrong! That’s the flag of France,” for example.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen01.png" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen02.png"  style="zoom:35%;" /> 
 
+#### SPAlert, Haptic, LinearGradient, Spacer, shuffled, random, renderingMode, overlay, Capsule, stroke, UIViewRepresentable
 
+我的实现 & 改进               | 图例 
+:---               |  :---:
+**🔷 `SPAlert`** <br/>○  `见底部 代码块`<br/><br/>**🔷模糊背景**<br/>○  `见底部 代码块`<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/2020-04-29 22.05.24.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
 
+``` swift
+// SPAlert
+            let alertView = SPAlertView(title: "正确", message: "得分+1", preset: SPAlertPreset.done)
+            alertView.duration = 1
+            alertView.haptic = .success
+            alertView.present()
 
+//MARK: 模糊背景
 
+.background(BlurBg(style: .systemUltraThinMaterial))
 
+struct BlurBg: UIViewRepresentable {
+    var style: UIBlurEffect.Style = .systemMaterial
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: UIBlurEffect(style: style))
+    }
+    
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = UIBlurEffect(style: style)
+    }
+}
+```
 
+#### 附：Text 类型
 
+![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/text1.png)
 
+![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/text2.png)
