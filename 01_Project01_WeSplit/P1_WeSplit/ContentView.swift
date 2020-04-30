@@ -67,10 +67,10 @@ struct ContentView: View {
                             .frame(minWidth: 150, alignment: .leading)
                         Spacer()
                         TextField("包括自己", value: $numberOfPeople, formatter: NumberFormatter())
-                        .keyboardType(.numbersAndPunctuation)
-                        .disableAutocorrection(true)
-                        .multilineTextAlignment(.center)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .keyboardType(.numbersAndPunctuation)
+                            .disableAutocorrection(true)
+                            .multilineTextAlignment(.center)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
                         Stepper("", value: $numberOfPeople, in: 1...1000).labelsHidden()
                     }
                 }
@@ -84,18 +84,20 @@ struct ContentView: View {
                 }
                 Section(header: Text("总金额 + 小费")) {
                     Text("\(grandTotal, specifier: "%.2f") 元")
+                        // MARK: Project03_challenge2
+                        .foregroundColor(self.tipPercentages[self.tipPercentage] == 0 ? Color.red : Color.primary)
                 }
                 Section(header: Text("人均")) {
                     // 显示 `Double` 两位小数的方法
                     Text("\(totalPerPerson, specifier: "%.2f") 元")
                 }
             }
-            // 滑动隐藏键盘
-            .gesture(
-                DragGesture()
-                    .onChanged {_ in
-                        self.endEditing()
-                }
+                // 滑动隐藏键盘
+                .gesture(
+                    DragGesture()
+                        .onChanged {_ in
+                            self.endEditing()
+                    }
             )
                 .navigationBarTitle("AA 收款")
         }
@@ -110,7 +112,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//            .colorScheme(.dark)
+        //            .colorScheme(.dark)
     }
 }
 
