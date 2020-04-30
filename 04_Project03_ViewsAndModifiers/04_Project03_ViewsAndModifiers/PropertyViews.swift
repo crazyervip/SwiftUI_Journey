@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct PropertyViews: View {
-    let motto1 = Text("Draco dormiens")
-    let motto2 = Text("nunquam titillandus")
+    let text1 = Text("SwiftUI 项目")
+    let text2 = Text("由浅入深")
 
-    // or
-    //var motto1: some View { Text("Draco dormiens") }
-    //var motto2: some View { Text("nunquam titillandus") }
+    // 或者
+    //var text1: some View { Text("SwiftUI 项目") }
+    //var text2: some View { Text("由浅入深") }
 
     var body: some View {
         VStack {
-            motto1
+            text1
                 .foregroundColor(.red)
-            motto2
+            text2
                 .foregroundColor(.blue)
         }
     }

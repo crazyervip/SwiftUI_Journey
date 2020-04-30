@@ -58,14 +58,14 @@ struct CustomModifiers: View {
 
             Color.blue
             .frame(width: 300, height: 200)
-            .watermarked(with: "Hacking with Swift")
+            .watermarked(with: "SwiftUI 项目由浅入深")
 
             Spacer()
         }
     }
 }
 
-struct CustomModifierw_Previews: PreviewProvider {
+struct CustomModifiers_Previews: PreviewProvider {
     static var previews: some View {
         CustomModifiers()
     }

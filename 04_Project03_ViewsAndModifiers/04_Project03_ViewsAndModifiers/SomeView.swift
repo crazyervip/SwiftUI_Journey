@@ -50,7 +50,7 @@ struct ComplexButtonView: View {
             print(type(of: self.body))
         }
         .frame(width: 200, height: 200)
-        .background(Color.red)
+        .background(Color.red.opacity(0.8))
         as! ModifiedContent<ModifiedContent<Button<Text>, _FrameLayout>, _BackgroundModifier<Color>>
     }
 }

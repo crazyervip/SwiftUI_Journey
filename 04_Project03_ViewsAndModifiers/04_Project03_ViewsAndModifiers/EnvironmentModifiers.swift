@@ -12,13 +12,9 @@ struct EnvironmentModifiers: View {
     var body: some View {
         VStack {
             Spacer()
-
             EnvironmentModifier()
-
             Spacer()
-
             RegularModifier()
-
             Spacer()
         }
     }
@@ -27,13 +23,11 @@ struct EnvironmentModifiers: View {
 struct EnvironmentModifier: View {
     var body: some View {
         VStack {
-            Text("Gryffindor")
-                .font(.largeTitle) // will replace title with large title for this text
-            Text("Hufflepuff")
-            Text("Ravenclaw")
-            Text("Slytherin")
+            Text("SwiftUI 项目")
+                .font(.largeTitle) //  重写字体，显示为 largeTitle
+            Text("由浅入深")
         }
-        .font(.title) // will apply to all the other text
+        .font(.title) // 全部显示为 title
     }
 }
 
@@ -41,13 +35,11 @@ struct RegularModifier: View {
     var body: some View {
         VStack {
             VStack {
-                Text("Gryffindor")
-                    .blur(radius: 0) // will remained blurred at 5; if 10 is specified instead of 0, would be blurred at 15.
-                Text("Hufflepuff")
-                Text("Ravenclaw")
-                Text("Slytherin")
+                Text("SwiftUI 项目")
+                    .blur(radius: 7) // 重写模糊，显示为 .blur(radius: 10) ,最低为 3，使用 -3 无法取消模糊
+                Text("由浅入深")
             }
-            .blur(radius: 5) // will apply to all
+            .blur(radius: 3) // 全部显示为 .blur(radius: 3)
             .font(.title)
         }
     }

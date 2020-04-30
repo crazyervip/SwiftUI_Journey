@@ -13,18 +13,21 @@ struct ConditionalModifiers: View {
 
     var body: some View {
         Button("Hello World") {
-            // flip the Boolean between true and false
+            // 像开关一样转换 Bool 值
             self.useRedText.toggle()
         }
         .foregroundColor(useRedText ? .red : .blue)
     }
 }
 
-// not allowed because 2 views returned are of different types
-//struct IncorrectView: View {
+// MARK: 会报错，因为两个 Views 返回的类型不同 because 2 views returned are of different types
+//struct ConditionalModifiers: View {
+//    @State private var useRedText = false
+//
 //    var body: some View {
 //        if self.useRedText {
 //            return Text("Hello World")
+//                .foregroundColor(Color.clear)
 //        } else {
 //            return Text("Hello World")
 //                .background(Color.red)

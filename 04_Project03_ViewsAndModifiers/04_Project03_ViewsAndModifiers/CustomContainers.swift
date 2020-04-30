@@ -26,7 +26,6 @@ struct GridStack<Content: View>: View {
         }
     }
     
-    // allows several views inside the GridStack, without having to ressort to a HStack
     init(rows: Int, columns: Int, spacing: CGFloat, @ViewBuilder content: @escaping (Int, Int) -> Content) {
         self.rows = rows
         self.columns = columns
@@ -50,7 +49,8 @@ struct CustomContainers: View {
                                 Rectangle()
                                     .foregroundColor(Color.clear)
                                     .frame(minWidth: UIScreen.main.bounds.width/3)
-                                    .frame(minHeight: UIScreen.main.bounds.width/3).background(Color.orange.opacity(0.2))
+                                    .frame(minHeight: UIScreen.main.bounds.width/3)
+                                    .background(Color.orange.opacity(0.2))
                                     .background(VStack {
                                         Image(systemName: "\(row * 3 + col+1).circle")
                                         Text("R\(row+1) C\(col+1)")

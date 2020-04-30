@@ -23,9 +23,9 @@ struct CapsuleText: View {
 struct ViewComposition: View {
     var body: some View {
         VStack(spacing: 10) {
-            CapsuleText(text: "第一个")
+            CapsuleText(text: "SwiftUI 项目")
                 .foregroundColor(.white)
-            CapsuleText(text: "第二个")
+            CapsuleText(text: "由浅入深")
                 .foregroundColor(.yellow)
         }
     }
