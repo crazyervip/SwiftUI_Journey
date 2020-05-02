@@ -14,29 +14,30 @@
 
 种类               | 情况 
 :---               |  :---:  
-Projects | 3 / 19 
-Challenges | 9 / 57 
-Milestone Projects | 0 / 6
+Projects | 6 / 19 
+Challenges | 18 / 57 
+Milestone Projects | 2 / 6 
 Challenge days     |  1 / 1
-Improvements | 🔷 13 
+Improvements | 🔷 17 
 
-## 预览
+## 01_P1_AA 收款
 
-### P1_AA 收款
-
- 项目需求                                                     |                            图例1                             |                            图例2                             
+ 项目要点                                                     |                            图例1                             |                            图例2                             
  :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
- <br/>>1. Add a header to the third section, saying “Amount per person”.<br/><br/>>2. Add another section showing the total amount for the check<br/> – i.e., the original amount plus tip value, without dividing by the number of people.<br/>>3. Change the “Number of people” picker to be a text field, making sure to use the correct keyboard type.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>>1. Add a header to the third section, saying “Amount per person”.<br/><br/>>2. Add another section showing the total amount for the check<br/> – i.e., the original amount plus tip value, without dividing by the number of people.<br/>>3. Change the “Number of people” picker to be a text field, making sure to use the correct keyboard type.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen01.png"  style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/screen02.png"  style="zoom:100%;" /> 
 
-#### 🏷️标签：Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach, Stepper, UITextField, UIApplication, TextField 配合 Stepper
+### 🏷️标签：
 
-📢完整代码请查看 *[ContentView](https://github.com/no-more-coding/SwiftUI_Journey/blob/master/01_Project01_WeSplit/P1_WeSplit/ContentView.swift)*
+#### Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach, Stepper, UITextField, UIApplication, TextField 配合 Stepper
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`** | **🔷为数字键盘加上 `完成` 按钮^1⃣️^** <br/>○  `extension UITextField`<br/>○  `introspectTextField`<br/><br/>**🔷通过上滑和下滑隐藏键盘^2⃣️^**<br/>○  `extension UIApplication`<br/>○  `DragGesture()` | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.22.23.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
-**`Segment Control`<br/>`ForEach`^3⃣️^ **, <br/>**`@State`** ^4⃣️^, <br/>`$` 符号^5⃣️^ |**🔷`Stepper`^6⃣️^** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.16.49.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
-**显示 `Double` 两位小数 ^7⃣️^** | **🔷`TextField`配合`Stepper` ^8⃣️^ ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.19.24.gif" style="zoom:35%;" /> 
+**`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`** | **🔷为数字键盘加上 `完成` 按钮^1⃣️^** <br/>○  `extension UITextField`<br/>○  `introspectTextField`<br/><br/>**🔷通过上滑和下滑隐藏键盘^2⃣️^**<br/>○  `extension UIApplication`<br/>○  `DragGesture()` | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.22.23.gif"  style="zoom:100%;" /> 
+**`Segment Control`<br/>`ForEach`^3⃣️^ **, <br/>**`@State`** ^4⃣️^, <br/>`$` 符号^5⃣️^ |**🔷`Stepper`^6⃣️^** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.16.49.gif"  style="zoom:100%;" /> 
+**显示 `Double` 两位小数 ^7⃣️^** | **🔷`TextField`配合`Stepper` ^8⃣️^ ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.19.24.gif" style="zoom:100%;" /> 
 
 1⃣️ & 5⃣️
 
@@ -141,17 +142,19 @@ extension UIApplication {
 Text("\(totalPerPerson, specifier: "%.2f") 元")`
 ```
 
-#### 📎附：键盘类型
+### 📎附：键盘类型
 
 ![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/keyboardType1.png)
 
 ![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/keyboardType2.png)
 
-### C1_单位换算器
 
- 项目需求                                                     |                            图例1                             |                            图例2                             
+
+## 02_C1_单位换算器
+
+ 项目要点                                                     |                            图例1                             |                            图例2                             
  :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
- <br/>**You need to build an app that handles unit conversions**: <br/><br/>users will select an input unit and an output unit, then enter a value,and see the output of the conversion.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen02.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>**You need to build an app that handles unit conversions**: <br/><br/>users will select an input unit and an output unit, then enter a value,and see the output of the conversion.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen01.png"  style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/screen02.png"  style="zoom:100%;" /> 
 
 >Which units you choose are down to you, but you could choose one of these:
 >- Temperature conversion: users choose Celsius, Fahrenheit, or Kelvin.
@@ -169,13 +172,16 @@ Text("\(totalPerPerson, specifier: "%.2f") 元")`
 >
 >If you want a bigger challenge, try adding a third segmented control that lets us change the unit being converted – give your program the ability to convert temperature, length, time, or volume, all in one app.
 
-#### 🏷️标签：Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach, UIApplication, protocol, static, UnitLength, UnitDuration, UnitVolume, UnitTemperature, Dimension, enum, converted
+### 🏷️标签：
 
-📢完整代码请查看 *[ContentView](https://github.com/no-more-coding/SwiftUI_Journey/blob/master/02_ChallengeDay01_Converter/02_ChallengeDay01_Converter/ContentView.swift)*
+#### Form, Section, NavigationView, @State property wrapper, TextField, Picker, ForEach, UIApplication, protocol, static, UnitLength, UnitDuration, UnitVolume, UnitTemperature, Dimension, enum, converted
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**[`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`,<br/>`Segment Control`<br/>&`ForEach` , <br/>`@State` , <br/>`$` 符号^P1^](https://blog.csdn.net/qq_41239137/article/details/105827493),<br/><br/>[`protocol`, <br/>`static`, <br/>`UnitLength`, <br/>`UnitDuration`, <br/>`UnitVolume`,<br/>`UnitTemperature`, <br/>`Dimension`, <br/>`enum`, <br/>`converted`^见Modal^](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/02_ChallengeDay01_Converter/02_ChallengeDay01_Converter/Model)** | **🔷通过上滑和下滑隐藏键盘[^P1^]()**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化^1⃣️^**<br/>○  `SF Symbol`<br/><br/>**设置显示小数最多为5位 <br/>且为 0 时省略^2⃣️^**<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+**[`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`,<br/>`Segment Control`<br/>&`ForEach` , <br/>`@State` , <br/>`$` 符号^P1^](https://blog.csdn.net/qq_41239137/article/details/105827493),<br/><br/>[`protocol`, <br/>`static`, <br/>`UnitLength`, <br/>`UnitDuration`, <br/>`UnitVolume`,<br/>`UnitTemperature`, <br/>`Dimension`, <br/>`enum`, <br/>`converted`^见Modal^](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/02_ChallengeDay01_Converter/02_ChallengeDay01_Converter/Model)** | **🔷通过上滑和下滑隐藏键盘[^P1^]()**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化^1⃣️^**<br/>○  `SF Symbol`<br/><br/>**设置显示小数最多为5位 且为 0 时省略^2⃣️^**<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif"  style="zoom:100%;" /> 
 
 1⃣️
 
@@ -203,19 +209,24 @@ Text("\(totalPerPerson, specifier: "%.2f") 元")`
     }
 ```
 
-### P2_猜国旗
 
- 项目需求                                                     |                            图例1                             |                            图例2                             
+
+## 03_P2_猜国旗
+
+ 项目要点                                                     |                            图例1                             |                            图例2                             
  :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: 
- <br/>>1. Add an @State property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert.<br/><br/>>2. Show the player’s current score in a label directly below the flags.<br/><br/>>3. When someone chooses the wrong flag, tell them their mistake in your alert message<br/> – something like “Wrong! That’s the flag of France,” for example.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen01.png" style="zoom:35%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen02.png"  style="zoom:35%;" /> 
+ <br/>>1. Add an @State property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert.<br/><br/>>2. Show the player’s current score in a label directly below the flags.<br/><br/>>3. When someone chooses the wrong flag, tell them their mistake in your alert message<br/> – something like “Wrong! That’s the flag of France,” for example.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen01.png" style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/screen02.png"  style="zoom:100%;" /> 
 
-#### 🏷️标签：ZStack, VStack, Image, Alert, SPAlert, Haptic, LinearGradient, Spacer, shuffled, random, renderingMode, overlay, Capsule, stroke, UIViewRepresentable
+### 🏷️标签：
 
-📢完整代码请查看 *[ContentView](https://github.com/no-more-coding/SwiftUI_Journey/blob/master/03_Project02_GuessTheFlag/03_Project02_Guess%20the%20Flag/ContentView.swift)*
+#### ZStack, VStack, Image, Alert, SPAlert, Haptic, LinearGradient, Spacer, shuffled, random, renderingMode, overlay, Capsule, stroke, UIViewRepresentable
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`ZStack`, <br/>`VStack`, <br/>`Image`, <br/>`Alert`,<br/>`SPAlert`,<br/>`haptic` , <br/>`LinearGradient`,<br/>`Spacer()`, <br/>`shuffled`, <br/>`random`, <br/>`renderingMode`^3⃣️^, <br/>`overlay`,<br/>`Capsule`, <br/>`UIViewRepresentable`,<br/>`stroke`** | **🔷`SPAlert`^1⃣️^** <br/>**🔷*总分* 模糊背景^2⃣️^** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/2020-04-29 22.05.24.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+**`ZStack`, <br/>`VStack`, <br/>`Image`, <br/>`Alert`,<br/>`SPAlert`,<br/>`haptic` , <br/>`LinearGradient`,<br/>`Spacer()`, <br/>`shuffled`, <br/>`random`, <br/>`renderingMode`^3⃣️^, <br/>`overlay`,<br/>`Capsule`, <br/>`UIViewRepresentable`,<br/>`stroke`** | **🔷`SPAlert`^1⃣️^** <br/>**🔷*总分* 模糊背景^2⃣️^**<br/>**🔷选项移至下方，用户更易触及** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/2020-04-29 22.05.24.gif"  style="zoom:100%;" /> 
 
 在 [SwiftUI_Intuition_Library](https://github.com/no-more-coding/SwiftUI_Intuition_Library) 里发现更多关于 [overlay](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Mask.md)，[stroke](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Border.md)，[Alert](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Alert.md)等内容
 
@@ -257,32 +268,35 @@ Image(self.countries[number])
 	.renderingMode(.original)
 ```
 
-#### 📎附：Text 类型
+### 📎附：Text 类型
 
 ![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/text1.png)
 
 ![](https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/text2.png)
 
-### P3_Views 和 Modifiers
 
- 项目需求                                                     |                             图例                             
+
+## 04_P3_Views 和 Modifiers
+
+ 项目要点                                                     |                             图例                             
  :----------------------------------------------------------- | :----------------------------------------------------------: 
- <br/>>1. Create a custom ViewModifier (and accompanying View extension) that makes a view have a large, blue font suitable for prominent titles in a view.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
- <br/>>2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge2/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
- <br/>>3. Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge3/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>>1. Create a custom ViewModifier (and accompanying View extension) that makes a view have a large, blue font suitable for prominent titles in a view.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/screen01.png"  style="zoom:100%;" /> 
+ <br/>>2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge2/screenshots/screen01.png"  style="zoom:100%;" /> 
+ <br/>>3. Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge3/screenshots/screen01.png"  style="zoom:100%;" /> 
 
+### 🏷️标签：
 
-#### 🏷️标签：Views, Modifiers
+#### Views, Modifiers, Modifiers 的顺序, 一个 modifier 作用于多个 Views, Modifiers 也适用于 Text 等类型, Modifiers 也适用于 View 类型, 自定义的 Modifiers, 组合成格子视图
 
 ------
 
 📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
 
-实现 | 改进               | 图例 
-:---               | :---               |  :---:
-**`struct LargeTitle: ViewModifier {...}`, <br/>`extension View {...}` <br/><br/>`struct Challenge1: View {...    .largeTitle()}`^1⃣️^ ** |  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/1.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
-**`a ? b : c`^2⃣️^**<br/>  ○ a 为真，则使用 b 的值，反之，c 的值 | | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/2.gif" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
-** `Extract SubView`  ^3⃣️^** |  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/3.gif" style="zoom:35%;" /> 
+实现 |                图例 
+:---                             |  :---:
+**`struct LargeTitle: ViewModifier {...}`, <br/>`extension View {...}` <br/><br/>`struct Challenge1: View {...    .largeTitle()}`^1⃣️^ ** |   <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/1.gif"  style="zoom:100%;" /> 
+**`a ? b : c`^2⃣️^**<br/>  ○ 三元运算符<br/>  ○ a 为真，则使用 b 的值，反之，c 的值 |  <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/2.gif"  style="zoom:100%;" /> 
+** `Extract SubView`  ^3⃣️^** |   <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/3.gif" style="zoom:100%;" /> 
 
 1⃣️ 
 
@@ -354,13 +368,13 @@ struct Flag: View {
 }
 ```
 
-#### 💬拓展：
+### 💬拓展：
 
 ------
 
-##### 1 Modifiers 的顺序
+#### 1 Modifiers 的顺序
 
-``` swift
+```swift
 struct ModifiersOrder: View {
     var body: some View {
         VStack {
@@ -396,9 +410,9 @@ struct ModifiersOrder: View {
   <img width="35%" src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/4.gif"/>
 </details>
 
-##### 2 一个 modifier 作用于多个 Views
+#### 2 一个 modifier 作用于多个 Views
 
-``` swift
+```swift
 struct EnvironmentModifiers: View {
     var body: some View {
         VStack {
@@ -443,9 +457,9 @@ struct RegularModifier: View {
   <img width="35%" src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/5.gif"/>
 </details>
 
-#####  3 Modifiers 也适用于 Text 等类型
+####  3 Modifiers 也适用于 Text 等类型
 
-``` swift
+```swift
 struct PropertyViews: View {
     let text1 = Text("SwiftUI 项目")
     let text2 = Text("由浅入深")
@@ -471,9 +485,9 @@ struct PropertyViews: View {
   <img width="35%" src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/6.gif"/>
 </details>
 
-##### 4 Modifiers 也适用于 View 类型
+#### 4 Modifiers 也适用于 View 类型
 
-``` swift
+```swift
 struct CapsuleText: View {
     var text: String
 
@@ -504,9 +518,9 @@ struct ViewComposition: View {
   <img width="35%" src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/7.gif"/>
 </details>
 
-##### 5 自定义的 Modifiers
+#### 5 自定义的 Modifiers
 
-``` swift
+```swift
 struct Title: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -571,9 +585,9 @@ struct CustomModifiers: View {
   <img width="35%" src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/8.gif"/>
 </details>
 
-##### 6 组合成 格子视图
+#### 6 🔷组合成格子视图
 
-``` swift
+```swift
 struct GridStack<Content: View>: View {
     let rows: Int
     let columns: Int
@@ -636,3 +650,144 @@ struct CustomContainers: View {
 iPhone 8               | iPhone 11   
  :---:                |  :---:  
 <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/10.gif" style="zoom:33%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/9.gif" style="zoom:33%;" />
+
+
+
+## 05_M1(1-3)_石头剪刀布
+
+ 项目要点                                                     |                             图例                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: 
+ <br/>>- *Each turn of the game the app will randomly pick either rock, paper, or scissors.*<br/>\>- *Each turn the app will either prompt the player to win or lose.*<br/>\>- *The player must then tap the correct move to win or lose the game.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/screen01.png"  style="zoom:100%;" /> 
+ <br/>\>- *If they are correct theyscore a point; otherwise they lose a point.*<br/>\>- *The game ends after 10 questions, at which point their score is shown.*<br/>\>- *So, if the app chose “Rock” and “Win” the player would need to choose “Paper”, but if the app chose “Rock” and “Lose” the player would need to choose “Scissors”.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/screen02.png"  style="zoom:100%;" /> 
+
+### 🏷️标签：
+
+#### ObservableObject, Timer, switch, case, onReceive
+
+------
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
+实现 | 改进               | 图例 
+:---               | :---               |  :---:
+**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | **🔷视图优化** <br/>**🔷添加[`ObservableObject`](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/05_Milestone01(1-3)_RockPaperScissors/ObservableObject_Version) 版本** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/1.gif"  style="zoom:100%;" /> 
+
+
+
+
+## 06_P4_好睡眠
+
+ 项目要点                                                     |                             图例                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: 
+ <br/>\>1. *Replace each VStack in our form with a Section, where the text view is the title of the section. Do you prefer this layout or the VStack layout? It’s your app – you choose!*<br/><br/>\>2. *Replace the “Number of cups” stepper with a Picker showing the same range of values.*<br/><br/>\>3. *Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the “Calculate” button entirely.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/screen01.png" style="zoom:150%;" /> 
+
+### 🏷️标签：
+
+#### Machine Learning, Dates (DatePicker, DateComponents, DateFormatter) Stepper
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
+
+实现               | 图例 
+:---                             |  :---:
+**`Create ML`, <br/>`DatePicker`, <br/>`DateComponents`, <br/>`DateFormatter`**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/1.gif"  style="zoom:50%;" /> 
+
+自动控制小数点
+
+``` swift
+//MARK: challenge 1
+                Section(header: Text("你想睡多久？").font(.headline)) {
+                    Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
+                        //MARK: 自动控制小数点
+                        Text("\(sleepAmount, specifier: "%g") 小时")
+                    }
+                }
+```
+
+## 07_P5_猜单词
+
+ 项目要点                                                     |                             图例                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: 
+ <br/>\>1. *Disallow answers that are shorter than three letters or are just our start word. For the three-letter check, the easiest thing to do is put a check into isReal() that returns false if the word length is under three letters. For the second part, just compare the start word against their input word and return false if they are the same.*<br/><br/>\>2. *Add a left bar button item that calls startGame(), so users can restart with a new word whenever they want to.*<br/><br/>\>3. *Put a text view below the List so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/screen01.png" style="zoom:250%;" /> 
+
+### 🏷️标签：
+
+#### List, onAppear, Bundle, fatalError(), UITextChecker, navigationBarItems, becomeFirstResponder
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
+
+实现               | 图例 
+:---                             |  :---:
+**`.introspectTextField{}`, <br/>🔷`becomeFirstResponder`, <br/>`List`, <br/>`onAppear`, <br/>`Bundle`, <br/>`fatalError()`, <br/>`UITextChecker`, <br/>🔷`navigationBarItems`(避免键盘遮挡)**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/1.gif"  style="zoom:50%;" /> 
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/3.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/2.gif"  style="zoom:50%;" /> 
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/4.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/5.gif"  style="zoom:50%;" /> 
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/6.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/7.gif"  style="zoom:50%;" /> 
+
+## 08_P6_Animations 和 Transitions
+
+ 项目要点                                                     |                             图例                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: 
+ <br/>\>1. *When you tap the correct flag, make it spin around 360 degrees on the Y axis.*<br/><br/>\>2. *Make the other two buttons fade out to 25% opacity.*<br/><br/>\>3. *And if you tap on the wrong flag? Well, that’s down to you – get creative!*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/Challenges/screenshots/screen01.png" style="zoom:100%;" /> 
+
+### 🏷️标签：
+
+#### animations, transitions, rotation3DEffect, scaleEffect, 三元运算符的嵌套, 抖动效果, DragGesture
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
+
+实现               | 图例 
+:---                             |  :---:
+**`rotation3DEffect`,  <br/>🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  <br/>🔷`scaleEffect` ,<br/>🔷抖动效果^2⃣️^ **  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
+**`.DragGesture()`**,<br/>**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:50%;" /> 
+
+1⃣️
+
+``` swift
+.foregroundColor(animatingIncreaseScore ? .green : (animatingDecreaseScore ? .red : .white))
+.background(animatingDecreaseScore ? Color.red.opacity(0.8) : (animatingIncreaseScore ? Color.green.opacity(0.8) : nil))
+```
+
+2⃣️
+
+``` swift
+//MARK: Project06_Animations
+// 抖动效果 https://talk.objc.io/episodes/S01E173-building-a-shake-animation
+struct ShakeEffect: GeometryEffect {
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        return ProjectionTransform(CGAffineTransform(translationX: -30 * sin(position * 2 * .pi), y: 0))
+    }
+
+    init(shakes: Int) {
+        position = CGFloat(shakes)
+    }
+
+    var position: CGFloat
+    var animatableData: CGFloat {
+        get { position }
+        set { position = newValue }
+    }
+}
+```
+
+## 09_M2(4-6)_乘法表试炼
+
+ 项目要点                                                     |                             图例                             
+ :----------------------------------------------------------- | :----------------------------------------------------------: 
+ <br/>\>- *The player needs to select which multiplication tables they want to practice. This could be pressing buttons, or it could be an “Up to…” stepper, going from 1 to 12.*<br/>\>- *The player should be able to select how many questions they want to be asked: 5, 10, 20, or “All”.*<br/>\>- *You should randomly generate as many questions as they asked for, within the difficulty range they asked for. For the “all” case you should generate all possible combinations.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen01.png"  style="zoom:250%;" /> 
+ <br/>\>*If you want to go fully down the “education” route then this is going to be some steppers, a text field and a couple of buttons. I would suggest that’s a good place to start, just to make sure you have the basics covered.*<br/>\>*Once you have that, it’s down to you how far you want to take the app down the “entertainment” route – you could throw away fixed controls like Stepper entirely if you wanted, and instead rely on colorful buttons to get the same result. You could use something like Kenney’s Animal Pack (which is public domain, by the way!) to add a fun theme to make it into a real game. And hopefully you will also add some over the top animations – it needs to appeal to kids 9 and under, so going bright, colorful, and perhaps even a bit zany is a good idea!*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen02.png"  style="zoom:250%;" /> 
+
+### 🏷️标签：
+
+#### 自定义数字键盘, ObservableObject, Published, ObservedObject, 
+
+------
+
+📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
+
+实现 |  图例 
+:---               |  :---:
+**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> 
+**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> 
+
