@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		28B8E82E245BE88000415206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B8E82D245BE88000415206 /* Preview Assets.xcassets */; };
 		28B8E831245BE88000415206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B8E82F245BE88000415206 /* LaunchScreen.storyboard */; };
 		28B8E83B245BED9100415206 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 28B8E83A245BED9000415206 /* start.txt */; };
+		696B37DC802D35B070050775 /* Pods_07_Project05_WordScramble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65437030F4FEC2D63D0F911F /* Pods_07_Project05_WordScramble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		28B8E838245BE8A800415206 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
 		28B8E839245BE8A800415206 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		28B8E83A245BED9000415206 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		4AF79E20EC6F5B0F805D7541 /* Pods-07_Project05_WordScramble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07_Project05_WordScramble.debug.xcconfig"; path = "Target Support Files/Pods-07_Project05_WordScramble/Pods-07_Project05_WordScramble.debug.xcconfig"; sourceTree = "<group>"; };
+		65437030F4FEC2D63D0F911F /* Pods_07_Project05_WordScramble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_07_Project05_WordScramble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99199965A2DD71DD62389B22 /* Pods-07_Project05_WordScramble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-07_Project05_WordScramble.release.xcconfig"; path = "Target Support Files/Pods-07_Project05_WordScramble/Pods-07_Project05_WordScramble.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696B37DC802D35B070050775 /* Pods_07_Project05_WordScramble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 				28B8E838245BE8A800415206 /* screenshots */,
 				28B8E823245BE87D00415206 /* 07_Project05_WordScramble */,
 				28B8E822245BE87D00415206 /* Products */,
+				6262C9C51600BCC055102B51 /* Pods */,
+				4FE1ADE94CC91ECCD2FDFFEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4FE1ADE94CC91ECCD2FDFFEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65437030F4FEC2D63D0F911F /* Pods_07_Project05_WordScramble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6262C9C51600BCC055102B51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AF79E20EC6F5B0F805D7541 /* Pods-07_Project05_WordScramble.debug.xcconfig */,
+				99199965A2DD71DD62389B22 /* Pods-07_Project05_WordScramble.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28B8E835245BE88000415206 /* Build configuration list for PBXNativeTarget "07_Project05_WordScramble" */;
 			buildPhases = (
+				C6DE57C6DA05222B0B83AECD /* [CP] Check Pods Manifest.lock */,
 				28B8E81D245BE87D00415206 /* Sources */,
 				28B8E81E245BE87D00415206 /* Frameworks */,
 				28B8E81F245BE87D00415206 /* Resources */,
+				8B206F0251402D5C62537928 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B206F0251402D5C62537928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-07_Project05_WordScramble/Pods-07_Project05_WordScramble-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-07_Project05_WordScramble/Pods-07_Project05_WordScramble-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-07_Project05_WordScramble/Pods-07_Project05_WordScramble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DE57C6DA05222B0B83AECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-07_Project05_WordScramble-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28B8E81D245BE87D00415206 /* Sources */ = {
@@ -290,6 +358,7 @@
 		};
 		28B8E836245BE88000415206 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF79E20EC6F5B0F805D7541 /* Pods-07_Project05_WordScramble.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +379,7 @@
 		};
 		28B8E837245BE88000415206 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99199965A2DD71DD62389B22 /* Pods-07_Project05_WordScramble.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
