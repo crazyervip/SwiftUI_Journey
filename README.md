@@ -35,8 +35,8 @@ Improvements | 🔷 17
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`** | **🔷为数字键盘加上 `完成` 按钮^1⃣️^** <br/>○  `extension UITextField`<br/>○  `introspectTextField`<br/><br/>**🔷通过上滑和下滑隐藏键盘^2⃣️^**<br/>○  `extension UIApplication`<br/>○  `DragGesture()` | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.22.23.gif"  style="zoom:100%;" /> 
-**`Segment Control`<br/>`ForEach`^3⃣️^ **, <br/>**`@State`** ^4⃣️^, <br/>`$` 符号^5⃣️^ |**🔷`Stepper`^6⃣️^** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.16.49.gif"  style="zoom:100%;" /> 
+**`Form`, `Section`, `NavigationView`, `TextField`** | **🔷为数字键盘加上 `完成` 按钮^1⃣️^** <br/>○  `extension UITextField`<br/>○  `introspectTextField`<br/><br/>**🔷通过上滑和下滑隐藏键盘^2⃣️^**<br/>○  `extension UIApplication`<br/>○  `DragGesture()` | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.22.23.gif"  style="zoom:100%;" /> 
+**`Segment Control``ForEach`^3⃣️^ **, **`@State`** ^4⃣️^, `$` 符号^5⃣️^ |**🔷`Stepper`^6⃣️^** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.16.49.gif"  style="zoom:100%;" /> 
 **显示 `Double` 两位小数 ^7⃣️^** | **🔷`TextField`配合`Stepper` ^8⃣️^ ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/01_Project01_WeSplit/screenshots/2020-04-28 16.19.24.gif" style="zoom:100%;" /> 
 
 1⃣️ & 5⃣️
@@ -125,7 +125,7 @@ extension UIApplication {
 - 使用在 `TextField` 中的 `var` 一般是 `String` 类型
 - `Int` 类型需在 TF 里改 `text ：`为 `value: ` 
 - 并添加 `formatter: NumberFormatter()` 
-- ⚠️ : 如果为 Int 则不会随输入自动更新，需按下**回车键** <br/>
+- ⚠️ : 如果为 Int 则不会随输入自动更新，需按下**回车键** 
 
 ``` swift
 						TextField("包括自己", value: $numberOfPeople, formatter: NumberFormatter())
@@ -181,7 +181,7 @@ Text("\(totalPerPerson, specifier: "%.2f") 元")`
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**[`Form`, <br/>`Section`, <br/>`NavigationView`, <br/>`TextField`,<br/>`Segment Control`<br/>&`ForEach` , <br/>`@State` , <br/>`$` 符号^P1^](https://blog.csdn.net/qq_41239137/article/details/105827493),<br/><br/>[`protocol`, <br/>`static`, <br/>`UnitLength`, <br/>`UnitDuration`, <br/>`UnitVolume`,<br/>`UnitTemperature`, <br/>`Dimension`, <br/>`enum`, <br/>`converted`^见Modal^](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/02_ChallengeDay01_Converter/02_ChallengeDay01_Converter/Model)** | **🔷通过上滑和下滑隐藏键盘[^P1^]()**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化^1⃣️^**<br/>○  `SF Symbol`<br/><br/>**设置显示小数最多为5位 且为 0 时省略^2⃣️^**<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif"  style="zoom:100%;" /> 
+**[`Form`, `Section`, `NavigationView`, `TextField`,`Segment Control`<br/>&`ForEach` , `@State` , `$` 符号^P1^](),<br/><br/>[`protocol`, `static`, `UnitLength`, <br/>`UnitDuration`, `UnitVolume`,<br/>`UnitTemperature`, `Dimension`, <br/>`enum`, `converted`^见Modal^](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/02_ChallengeDay01_Converter/02_ChallengeDay01_Converter/Model)** | **🔷通过上滑和下滑隐藏键盘[^P1^]()**<br/>○  `extension UIApplication`<br/>○  `DragGesture()`<br/><br/>**🔷换算符号优化^1⃣️^**<br/>○  `SF Symbol`<br/><br/>**设置显示小数最多为5位 且为 0 时省略^2⃣️^**<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/02_ChallengeDay01_Converter/screenshots/2020-04-29 16.30.02.gif"  style="zoom:100%;" /> 
 
 1⃣️
 
@@ -226,7 +226,7 @@ Text("\(totalPerPerson, specifier: "%.2f") 元")`
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`ZStack`, <br/>`VStack`, <br/>`Image`, <br/>`Alert`,<br/>`SPAlert`,<br/>`haptic` , <br/>`LinearGradient`,<br/>`Spacer()`, <br/>`shuffled`, <br/>`random`, <br/>`renderingMode`^3⃣️^, <br/>`overlay`,<br/>`Capsule`, <br/>`UIViewRepresentable`,<br/>`stroke`** | **🔷`SPAlert`^1⃣️^** <br/>**🔷*总分* 模糊背景^2⃣️^**<br/>**🔷选项移至下方，用户更易触及** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/2020-04-29 22.05.24.gif"  style="zoom:100%;" /> 
+**`ZStack`, `VStack`, `Image`, `Alert`,`SPAlert`,`haptic` , `LinearGradient`,<br/>`Spacer()`, `shuffled`, `random`, `renderingMode`^3⃣️^, <br/>`overlay`,`Capsule`, `UIViewRepresentable`,`stroke`** | **🔷`SPAlert`^1⃣️^** <br/>**🔷*总分* 模糊背景^2⃣️^**<br/>**🔷选项移至下方，用户更易触及** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/03_Project02_GuessTheFlag/screenshots/2020-04-29 22.05.24.gif"  style="zoom:100%;" /> 
 
 在 [SwiftUI_Intuition_Library](https://github.com/no-more-coding/SwiftUI_Intuition_Library) 里发现更多关于 [overlay](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Mask.md)，[stroke](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Border.md)，[Alert](https://github.com/no-more-coding/SwiftUI_Intuition_Library/blob/master/Markdowns/modifier_Alert.md)等内容
 
@@ -294,7 +294,7 @@ Image(self.countries[number])
 
 实现 |                图例 
 :---                             |  :---:
-**`struct LargeTitle: ViewModifier {...}`, <br/>`extension View {...}` <br/><br/>`struct Challenge1: View {...    .largeTitle()}`^1⃣️^ ** |   <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/1.gif"  style="zoom:100%;" /> 
+**`struct LargeTitle: ViewModifier {...}`, `extension View {...}` `struct Challenge1: View {...    .largeTitle()}`^1⃣️^ ** |   <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/1.gif"  style="zoom:100%;" /> 
 **`a ? b : c`^2⃣️^**<br/>  ○ 三元运算符<br/>  ○ a 为真，则使用 b 的值，反之，c 的值 |  <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/2.gif"  style="zoom:100%;" /> 
 ** `Extract SubView`  ^3⃣️^** |   <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/3.gif" style="zoom:100%;" /> 
 
@@ -670,10 +670,7 @@ iPhone 8               | iPhone 11
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | **🔷视图优化** <br/>**🔷添加[`ObservableObject`](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/05_Milestone01(1-3)_RockPaperScissors/ObservableObject_Version) 版本** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/1.gif"  style="zoom:100%;" /> 
-
-
-
+**`Timer`, `switch`, `case`,`onReceive` ** | **🔷视图优化** <br/>**🔷添加[`ObservableObject`](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/05_Milestone01(1-3)_RockPaperScissors/ObservableObject_Version) 版本** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/1.gif"  style="zoom:100%;" /> 
 
 ## 06_P4_好睡眠
 
@@ -690,7 +687,7 @@ iPhone 8               | iPhone 11
 
 实现               | 图例 
 :---                             |  :---:
-**`Create ML`, <br/>`DatePicker`, <br/>`DateComponents`, <br/>`DateFormatter`**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/1.gif"  style="zoom:50%;" /> 
+**`Create ML`, `DatePicker`, `DateComponents`, `DateFormatter`**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/1.gif"  style="zoom:50%;" /> 
 
 自动控制小数点
 
@@ -708,7 +705,7 @@ iPhone 8               | iPhone 11
 
  项目要点                                                     |                             图例                             
  :----------------------------------------------------------- | :----------------------------------------------------------: 
- <br/>\>1. *Disallow answers that are shorter than three letters or are just our start word. For the three-letter check, the easiest thing to do is put a check into isReal() that returns false if the word length is under three letters. For the second part, just compare the start word against their input word and return false if they are the same.*<br/><br/>\>2. *Add a left bar button item that calls startGame(), so users can restart with a new word whenever they want to.*<br/><br/>\>3. *Put a text view below the List so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/screen01.png" style="zoom:250%;" /> 
+ <br/>\>1. *Disallow answers that are shorter than three letters or are just our start word. For the three-letter check, the easiest thing to do is put a check into isReal() that returns false if the word length is under three letters. For the second part, just compare the start word against their input word and return false if they are the same.*<br/><br/>\>2. *Add a left bar button item that calls startGame(), so users can restart with a new word whenever they want to.*<br/><br/>\>3. *Put a text view below the List so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/screen01.png" style="zoom:100%;" /> 
 
 ### 🏷️标签：
 
@@ -717,12 +714,11 @@ iPhone 8               | iPhone 11
 📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
 
 
-实现               | 图例 
-:---                             |  :---:
-**`.introspectTextField{}`, <br/>🔷`becomeFirstResponder`, <br/>`List`, <br/>`onAppear`, <br/>`Bundle`, <br/>`fatalError()`, <br/>`UITextChecker`, <br/>🔷`navigationBarItems`(避免键盘遮挡)**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/1.gif"  style="zoom:50%;" /> 
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/3.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/2.gif"  style="zoom:50%;" /> 
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/4.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/5.gif"  style="zoom:50%;" /> 
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/6.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/7.gif"  style="zoom:50%;" /> 
+实现               | 图例1 | 图例2
+:---                             |  :---: |  :---:
+**`.introspectTextField{}`, <br/>🔷`becomeFirstResponder`,<br/> `List`, `onAppear`, <br/>`Bundle`, `fatalError()`,<br/> `UITextChecker`, <br/>🔷`navigationBarItems`(避免键盘遮挡)**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/1.gif"  style="zoom:50%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/3.gif"  style="zoom:50%;" />
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/4.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/5.gif"  style="zoom:50%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/2.gif"  style="zoom:50%;" />
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/6.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/7.gif"  style="zoom:50%;" /> |
 
 ## 08_P6_Animations 和 Transitions
 
@@ -739,8 +735,8 @@ iPhone 8               | iPhone 11
 
 实现               | 图例 
 :---                             |  :---:
-**`rotation3DEffect`,  <br/>🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  <br/>🔷`scaleEffect` ,<br/>🔷抖动效果^2⃣️^ **  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
-**`.DragGesture()`**,<br/>**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:50%;" /> 
+**`rotation3DEffect`,  🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  🔷`scaleEffect` ,🔷抖动效果^2⃣️^ **  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
+**`.DragGesture()`**,**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:50%;" /> 
 
 1⃣️
 
@@ -775,8 +771,8 @@ struct ShakeEffect: GeometryEffect {
 
  项目要点                                                     |                             图例                             
  :----------------------------------------------------------- | :----------------------------------------------------------: 
- <br/>\>- *The player needs to select which multiplication tables they want to practice. This could be pressing buttons, or it could be an “Up to…” stepper, going from 1 to 12.*<br/>\>- *The player should be able to select how many questions they want to be asked: 5, 10, 20, or “All”.*<br/>\>- *You should randomly generate as many questions as they asked for, within the difficulty range they asked for. For the “all” case you should generate all possible combinations.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen01.png"  style="zoom:250%;" /> 
- <br/>\>*If you want to go fully down the “education” route then this is going to be some steppers, a text field and a couple of buttons. I would suggest that’s a good place to start, just to make sure you have the basics covered.*<br/>\>*Once you have that, it’s down to you how far you want to take the app down the “entertainment” route – you could throw away fixed controls like Stepper entirely if you wanted, and instead rely on colorful buttons to get the same result. You could use something like Kenney’s Animal Pack (which is public domain, by the way!) to add a fun theme to make it into a real game. And hopefully you will also add some over the top animations – it needs to appeal to kids 9 and under, so going bright, colorful, and perhaps even a bit zany is a good idea!*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen02.png"  style="zoom:250%;" /> 
+ <br/>\>- *The player needs to select which multiplication tables they want to practice. This could be pressing buttons, or it could be an “Up to…” stepper, going from 1 to 12.*<br/>\>- *The player should be able to select how many questions they want to be asked: 5, 10, 20, or “All”.*<br/>\>- *You should randomly generate as many questions as they asked for, within the difficulty range they asked for. For the “all” case you should generate all possible combinations.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen01.png"  style="zoom:100%;" /> 
+ <br/>\>*If you want to go fully down the “education” route then this is going to be some steppers, a text field and a couple of buttons. I would suggest that’s a good place to start, just to make sure you have the basics covered.*<br/>\>*Once you have that, it’s down to you how far you want to take the app down the “entertainment” route – you could throw away fixed controls like Stepper entirely if you wanted, and instead rely on colorful buttons to get the same result. You could use something like Kenney’s Animal Pack (which is public domain, by the way!) to add a fun theme to make it into a real game. And hopefully you will also add some over the top animations – it needs to appeal to kids 9 and under, so going bright, colorful, and perhaps even a bit zany is a good idea!*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/screen02.png"  style="zoom:100%;" /> 
 
 ### 🏷️标签：
 
@@ -786,8 +782,8 @@ struct ShakeEffect: GeometryEffect {
 
 📢完整代码请查看 *[SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)*
 
-实现 |  图例 
-:---               |  :---:
-**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> 
-**`Timer`, <br/>`switch`, <br/>`case`,<br/>`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> 
+实现 |  图例1 |  图例2 
+:---               |  :---: |  :---:
+**`Timer`, `switch`, `case`,`onReceive`, `Timer`, `switch`, `case`,`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/2.gif"  style="zoom:100%;" /> 
+
 
