@@ -23,7 +23,7 @@ struct GameView: View {
     @State private var animatingDecreaseScore = false
     
     private var questionsCounterText: String {
-        "Question \(currentQuestion + 1)/\(questions.count) "
+        "训练 \(currentQuestion + 1)/\(questions.count) "
     }
     
     var body: some View {
@@ -38,7 +38,7 @@ struct GameView: View {
                             .foregroundColor(.purple)
                     }
                     else {
-                        Text("Score ")
+                        Text("总分 ")
                             .foregroundColor(.orange)
                         Text("\(score)/\(questions.count)")
                             .foregroundColor(.purple)
@@ -136,7 +136,7 @@ struct NewGameButton: View {
     @ObservedObject var settingsToggle: SettingsToggle
     
     var body: some View {
-        Button("New game") {
+        Button("新训练") {
             self.settingsToggle.isSettingsDisplayed.toggle()
         }
     }

@@ -59,7 +59,7 @@ struct KeyboardView: View {
                             .modifier(KeyboardTextStyle(width: self.getWidth(g), height: self.getHeight()))
                     }
                     Button(action: { self.actionPerformed?(.submit) }) {
-                        Text("Submit")
+                        Text("确定")
                             .modifier(KeyboardTextStyle(width: self.getWidth(g), height: self.getHeight(), bgColor: Color.green.opacity(0.8)))
                     }
                 }

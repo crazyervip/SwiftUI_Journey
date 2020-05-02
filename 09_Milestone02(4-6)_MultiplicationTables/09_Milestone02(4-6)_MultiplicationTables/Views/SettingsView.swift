@@ -16,7 +16,7 @@ struct SettingsView: View {
         VStack(spacing: 0) {
             Form {
                 Section(header:
-                    Text("Tables up to...")
+                    Text("训练哪位数？")
                         .font(.title)
                         .foregroundColor(.orange)) {
                             Stepper(value: $settings.tablesUpTo, in: 1...12) {
@@ -24,10 +24,10 @@ struct SettingsView: View {
                             }
                 }
                 Section(header:
-                    Text("Number of questions")
+                    Text("选择训练数量")
                         .font(.title)
                         .foregroundColor(.purple)) {
-                            Picker("Number of questions", selection: $settings.numberOfQuestionsIndex) {
+                            Picker("", selection: $settings.numberOfQuestionsIndex) {
                                 ForEach(0..<settings.numbersOfQuestions.count, id: \Int.self) { i in
                                     Text(self.numberOfQuestionsText(for: i))
                                 }
@@ -38,14 +38,15 @@ struct SettingsView: View {
             }
             HStack(spacing: 0) {
                 Spacer()
-                Button("Start") {
+                Button("开始") {
                     self.settingsToggle.isSettingsDisplayed.toggle()
                 }
-                .font(.system(size: 64))
+                .font(.system(size: 40))
                 Spacer()
                 
             }
             .padding()
+            .padding(.bottom)
             .background(Color("Background"))
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -57,7 +58,7 @@ struct SettingsView: View {
     
     func numberOfQuestionsText(for i: Int) -> String {
         let noq = self.settings.numbersOfQuestions[i]
-        return noq == .all ? "All (\(settings.maxNumberOfQuestions))" : noq.rawValue
+        return noq == .all ? "全部 (\(settings.maxNumberOfQuestions))" : noq.rawValue
     }
 }
 

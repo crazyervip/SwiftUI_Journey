@@ -12,7 +12,7 @@ enum NumberOfQuestions: String, CaseIterable {
     case five = "5"
     case ten = "10"
     case twenty = "20"
-    case all = "All"
+    case all = "all"
 }
 
 class Settings: ObservableObject {
@@ -30,7 +30,7 @@ class Settings: ObservableObject {
     }
 
     var maxNumberOfQuestions: Int {
-        // example with tables up to 3:
+        // 3 的例子：
         // 1x1, 1x2, 1x3, 1x4, 1x5, 1x6, 1x7, 1x8, 1x9, 1x10, 1x11, 1x12
         //      2x1, 3x1, 4x1, 5x1, 6x1, 7x1, 8x1, 9x1, 10x1, 11x1, 12x1 =>  23
         //      2x2, 2x3, 2x4, 2x5, 2x6, 2x7, 2x8, 2x9, 2x10, 2x11, 2x12

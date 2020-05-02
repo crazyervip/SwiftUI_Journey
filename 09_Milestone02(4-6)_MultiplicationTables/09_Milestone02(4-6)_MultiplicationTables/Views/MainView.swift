@@ -26,7 +26,7 @@ struct MainView: View {
                     GameView(settings: settings, settingsToggle: settingsToggle)
                 }
             }
-            .navigationBarTitle("Multiplication")
+            .navigationBarTitle("乘法表")
         }
     }
 }
@@ -34,7 +34,7 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            .colorScheme(.dark)
+//            .colorScheme(.dark)
     }
 }
 
