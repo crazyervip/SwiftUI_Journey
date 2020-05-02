@@ -15,15 +15,7 @@ struct BindingsAnimation: View {
         print(animationAmount)
 
         return VStack {
-            Stepper("Scale amount",
-                    value: $animationAmount.animation(
-                        Animation.easeInOut(duration: 1)
-                            .repeatCount(3, autoreverses: true)
-                    ),
-                    in: 1...10)
-
             Spacer()
-
             Button("Tap Me") {
                 self.animationAmount += 1
             }
@@ -32,6 +24,15 @@ struct BindingsAnimation: View {
             .foregroundColor(.white)
             .clipShape(Circle())
             .scaleEffect(animationAmount)
+            Spacer()
+            Stepper("Scale amount",
+                    value: $animationAmount.animation(
+                        Animation.easeInOut(duration: 1)
+                            .repeatCount(3, autoreverses: true)
+                    ),
+                    in: 1...10)
+                .padding()
+            
         }
     }
 }

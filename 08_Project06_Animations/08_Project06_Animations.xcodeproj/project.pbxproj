@@ -61,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2882B04B245D8CA100BC18D6 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				28B8E85C245C26FA00415206 /* ImplicitAnimation.swift */,
+				28B8E85E245C271100415206 /* CustomAnimation.swift */,
+				28B8E860245C272000415206 /* BindingsAnimation.swift */,
+				28B8E862245C272D00415206 /* ExplicitAnimation.swift */,
+				28B8E864245C273900415206 /* AnimationStack.swift */,
+				28B8E866245C274A00415206 /* AnimatedGestures1.swift */,
+				28B8E868245C275A00415206 /* AnimatedGestures2.swift */,
+				28B8E86A245C276C00415206 /* ShowHideViewAnimation.swift */,
+				28B8E86C245C277900415206 /* CustomTransition.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
 		28B8E83C245C255500415206 = {
 			isa = PBXGroup;
 			children = (
@@ -86,15 +102,7 @@
 				28B8E848245C255500415206 /* AppDelegate.swift */,
 				28B8E84A245C255500415206 /* SceneDelegate.swift */,
 				28B8E84C245C255500415206 /* ContentView.swift */,
-				28B8E85C245C26FA00415206 /* ImplicitAnimation.swift */,
-				28B8E85E245C271100415206 /* CustomAnimation.swift */,
-				28B8E860245C272000415206 /* BindingsAnimation.swift */,
-				28B8E862245C272D00415206 /* ExplicitAnimation.swift */,
-				28B8E864245C273900415206 /* AnimationStack.swift */,
-				28B8E866245C274A00415206 /* AnimatedGestures1.swift */,
-				28B8E868245C275A00415206 /* AnimatedGestures2.swift */,
-				28B8E86A245C276C00415206 /* ShowHideViewAnimation.swift */,
-				28B8E86C245C277900415206 /* CustomTransition.swift */,
+				2882B04B245D8CA100BC18D6 /* Parts */,
 				28B8E84E245C255700415206 /* Assets.xcassets */,
 				28B8E853245C255700415206 /* LaunchScreen.storyboard */,
 				28B8E856245C255700415206 /* Info.plist */,

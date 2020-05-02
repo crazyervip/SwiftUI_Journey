@@ -14,7 +14,7 @@ struct CornerRotateModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content.rotationEffect(.degrees(amount), anchor: anchor)
-            .clipped() // when the view rotates, the parts that are lying outside its natural rectangle don’t get drawn
+            .clipped()
     }
 }
 
@@ -35,11 +35,10 @@ struct CustomTransition: View {
                 }
             }
 
-            // optional (in comments): keep the space between the button at all time
-            //ZStack {
-            //    Rectangle()
-            //        .fill(Color.init(red: 0, green: 0, blue: 0).opacity(0))
-            //        .frame(width: 200, height: 200)
+            ZStack {
+                Rectangle()
+                    .fill(Color.init(red: 0, green: 0, blue: 0).opacity(0))
+                    .frame(width: 200, height: 200)
 
                 if isShowingRed {
                     Rectangle()
@@ -47,7 +46,7 @@ struct CustomTransition: View {
                         .frame(width: 200, height: 200)
                         .transition(.pivot)
                 }
-            //}
+            }
         }
     }
 }
