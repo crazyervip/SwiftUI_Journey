@@ -10,15 +10,6 @@
 > 
 > - [SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)：记录学习 [Paul Hudson (Hacking with Swift) 的 *100 days of SwiftUI*](https://www.hackingwithswift.com/100/swiftui) 
 
-> 记录学习 [Paul Hudson (Hacking with Swift) 的 *100 days of SwiftUI*](https://www.hackingwithswift.com/100/swiftui) 并融入一些**自己的见解和改善**
-> 
-> 欢迎关注我的 GitHub: [no-more-coding](https://github.com/no-more-coding)
-> 
-> - [SwiftUI_Intuition_Library](https://github.com/no-more-coding/SwiftUI_Intuition_Library)：SwiftUI 所有组件 📖 的视觉化演示 🤹🏻 (Control, Layout, Paints, Other) & Modifiers (Controls, Effect, Layout, Text, Image, List, Navigation Bar, Style, Modifiers, Events, Gestures…
-> - [SwiftUI_Intuition](https://github.com/no-more-coding/SwiftUI_Intuition) : 基于 [SwiftUI_Intuition_Library](https://github.com/no-more-coding/SwiftUI_Intuition_Library) 的展示app，UI 灵感来源 [*Unsplsh*](https://unsplash.com/)，*App Store*，*快捷指令*
-> 
-> - [SwiftUI_Journey](https://github.com/no-more-coding/SwiftUI_Journey)：记录学习 [Paul Hudson (Hacking with Swift) 的 *100 days of SwiftUI*](https://www.hackingwithswift.com/100/swiftui) 
-
 ## 🧑🏻‍💻进度
 
 种类               | 情况 
@@ -26,7 +17,7 @@
 Projects | 3 / 19 
 Challenges | 9 / 57 
 Milestone Projects | 0 / 6
-Challenge days     |  0 / 1
+Challenge days     |  1 / 1
 Improvements | 🔷 13 
 
 ## 预览
@@ -276,9 +267,9 @@ Image(self.countries[number])
 
  项目需求                                                     |                             图例                             
  :----------------------------------------------------------- | :----------------------------------------------------------: 
->1. Create a custom ViewModifier (and accompanying View extension) that makes a view have a large, blue font suitable for prominent titles in a view. | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
->2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip. | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge2/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
->3. Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had. | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge3/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>>1. Create a custom ViewModifier (and accompanying View extension) that makes a view have a large, blue font suitable for prominent titles in a view.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>>2. Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge2/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
+ <br/>>3. Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/Challenge3/screenshots/screen01.png" alt="2020-04-28 16.22.23" style="zoom:35%;" /> 
 
 
 #### 🏷️标签：Views, Modifiers

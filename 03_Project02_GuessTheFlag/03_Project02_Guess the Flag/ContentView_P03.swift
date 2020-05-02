@@ -1,8 +1,8 @@
 ////
 ////  ContentView.swift
-////  03_Project02_Guess the Flag
+////  03_Project02_GuessTheFlag
 ////
-////  Created by Jacob Zhang on 2020/4/29.
+////  Created by Jacob Zhang on 2020/5/1.
 ////  Copyright © 2020 Jacob Zhang. All rights reserved.
 ////
 //
@@ -48,11 +48,8 @@
 //                    Button(action: {
 //                        self.flagTapped(number)
 //                    }) {
-//                        Image(self.countries[number])
-//                            .renderingMode(.original)
-//                            .clipShape(Capsule())
-//                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-//                            .shadow(color: .black, radius: 2)
+//                        //MARK: Project03_Challenge3
+//                        Flag(name: self.countries[number])
 //                    }
 //                }
 //                Spacer()
@@ -117,3 +114,19 @@
 //        uiView.effect = UIBlurEffect(style: style)
 //    }
 //}
+//
+////MARK: Project03_Challenge3
+//
+//struct Flag: View {
+//    var name: String
+//    
+//    var body: some View {
+//        Image(name)
+//            .renderingMode(.original)
+//            .clipShape(Capsule())
+//            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+//            .shadow(color: .black, radius: 2)
+//    }
+//}
+//
+//
