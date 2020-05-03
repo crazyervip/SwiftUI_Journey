@@ -40,8 +40,6 @@ class Settings: ObservableObject {
 
         var duplicates = 0
         for i in 1...tablesUpTo {
-            // 1: duplicates within current table (1x1, 2x2, etc)
-            // (i - 1) * 2: duplicates of previous tables (table of 2: 1x2, 2x1, table of 3: 1x3, 3x1, 2x3, 3x2)
             duplicates += 1 + (i - 1) * 2
         }
 

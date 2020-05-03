@@ -20,12 +20,11 @@ struct NamedView {
 
 struct MainView: View {
     private let topics: [NamedView] = [
-        NamedView("Why @State only works with structs", view: StateAndStruct()),
-        NamedView("Sharing SwiftUI state with @ObservedObject", view: ObservedObjects()),
-        NamedView("Showing and hiding views", view: ShowHideViews()),
-        NamedView("Deleting items using onDelete()", view: DeleteItems()),
-        NamedView("Storing user settings with UserDefaults", view: UserDefaultsData()),
-        NamedView("Archiving Swift objects with Codable", view: CodableData())
+        NamedView("Struct Class ObservableObject", view: StructClassObservableObject()),
+        NamedView("展示和隐藏 Views", view: ShowHideViews()),
+        NamedView("使用 onDelete() 删除元素", view: DeleteItems()),
+        NamedView("使用 UserDefaults 保存用户设置", view: UserDefaultsData()),
+        NamedView("使用 Codable 来归档位 Swift 对象", view: CodableData())
     ]
 
     var body: some View {

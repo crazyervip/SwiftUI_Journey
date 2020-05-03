@@ -339,7 +339,7 @@ struct Challenge1: View {
 
 3⃣️
 
-<center> from <center>
+<center> from </center>
 
 ``` swift
 						Image(self.countries[number])
@@ -349,7 +349,7 @@ struct Challenge1: View {
                             .shadow(color: .black, radius: 2)
 ```
 
-<center> to <center>
+<center> to </center>
 
 ``` swift
 //MARK: Project03_Challenge3
@@ -670,7 +670,7 @@ iPhone 8               | iPhone 11
 
 实现 | 改进               | 图例 
 :---               | :---               |  :---:
-**`Timer`, `switch`, `case`,`onReceive` ** | **🔷视图优化** <br/>**🔷添加[`ObservableObject`](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/05_Milestone01(1-3)_RockPaperScissors/ObservableObject_Version) 版本** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/1.gif"  style="zoom:100%;" /> 
+**`Timer`, `switch`, `case`,`onReceive`** | **🔷视图优化** <br/>**🔷添加[`ObservableObject`](https://github.com/no-more-coding/SwiftUI_Journey/tree/master/05_Milestone01(1-3)_RockPaperScissors/ObservableObject_Version) 版本** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/05_Milestone01(1-3)_RockPaperScissors/screenshots/1.gif"  style="zoom:100%;" /> 
 
 ## 06_P4_好睡眠
 
@@ -735,7 +735,7 @@ iPhone 8               | iPhone 11
 
 实现               | 图例 
 :---                             |  :---:
-**`rotation3DEffect`,  🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  🔷`scaleEffect` ,🔷抖动效果^2⃣️^ **  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
+**`rotation3DEffect`,  🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  🔷`scaleEffect` ,🔷抖动效果^2⃣️^**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
 **`.DragGesture()`**,**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:50%;" /> 
 
 1⃣️
@@ -784,6 +784,6 @@ struct ShakeEffect: GeometryEffect {
 
 实现 |  图例1 |  图例2 
 :---               |  :---: |  :---:
-**`Timer`, `switch`, `case`,`onReceive`, `Timer`, `switch`, `case`,`onReceive` ** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/2.gif"  style="zoom:100%;" /> 
+**`Timer`, `switch`, `case`,`onReceive`, `Timer`, `switch`, `case`,`onReceive`** | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/1.gif"  style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/09_Milestone02(4-6)_MultiplicationTables/screenshots/2.gif"  style="zoom:100%;" /> 
 
 
