@@ -68,15 +68,15 @@
 		289542E3246000DB00E139EA /* 17_Milestone04(10-12)_UsersListing_P1 */ = {
 			isa = PBXGroup;
 			children = (
-				28954322246004B200E139EA /* Model */,
 				289542E4246000DB00E139EA /* AppDelegate.swift */,
 				289542E6246000DB00E139EA /* SceneDelegate.swift */,
 				289542EB246000DB00E139EA /* ContentView.swift */,
+				289542F5246000DD00E139EA /* Info.plist */,
+				28954322246004B200E139EA /* Model */,
 				2895431E2460049F00E139EA /* DetailView.swift */,
 				28954320246004A900E139EA /* friendface.json */,
 				289542ED246000DD00E139EA /* Assets.xcassets */,
 				289542F2246000DD00E139EA /* LaunchScreen.storyboard */,
-				289542F5246000DD00E139EA /* Info.plist */,
 				289542E8246000DB00E139EA /* CoreData.xcdatamodeld */,
 				289542EF246000DD00E139EA /* Preview Content */,
 			);
