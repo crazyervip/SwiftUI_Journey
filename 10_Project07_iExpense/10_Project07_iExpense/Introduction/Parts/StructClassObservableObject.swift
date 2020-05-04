@@ -31,21 +31,17 @@ struct StructClassObservableObject: View {
     @ObservedObject var user3 = User3()
     
     var body: some View {
-        List {
-            Group {
-                GeometryReader { gr1 in
-                    // List中除以2 ScrollView除1
-                    Image("GitPage")
-                        .resizable()
-                        .scaledToFill()
-                        .offset(y: gr1.frame(in: .global).minY > 0 ? -gr1.frame(in: .global).minY/2 : 0)
-                        .frame(width: UIScreen.main.bounds.width, height: gr1.frame(in: .global).minY > 0 ? 180 + gr1.frame(in: .global).minY : 180)
-                }
-                .frame(height: 180)
-                
-                .animation(.none)
-                
-                
+        VStack {
+            GeometryReader { gr1 in
+                Image("GitPage")
+                    .resizable()
+                    .scaledToFill()
+                    .offset(y: gr1.frame(in: .global).minY > 0 ? -gr1.frame(in: .global).minY/2 : 0)
+                    .frame(width: UIScreen.main.bounds.width, height: gr1.frame(in: .global).minY > 0 ? 180 + gr1.frame(in: .global).minY : 180)
+            }
+            .frame(height: 180)
+                        
+            VStack {
                 VStack {
                     Text("\(user1.first) \(user1.second)")
                         .font(.title)
@@ -66,8 +62,7 @@ struct StructClassObservableObject: View {
                 .padding()
                 .background(Color.red.opacity(0.2).cornerRadius(20))
                 
-                
-                //                Spacer().frame(height: 100)
+//                Spacer().frame(height: 100)
                 
                 VStack {
                     Text("\(user2.first) \(user2.second)")
@@ -90,7 +85,7 @@ struct StructClassObservableObject: View {
                 .padding()
                 .background(Color.blue.opacity(0.2).cornerRadius(20))
                 
-
+                
                 
                 VStack {
                     Text("\(user3.first) \(user3.second)")
@@ -111,10 +106,8 @@ struct StructClassObservableObject: View {
                 }
                 .padding()
                 .background(Color.green.opacity(0.2).cornerRadius(20))
-                
-
-
             }
+            .padding(.horizontal)
         }
         .modifier(KeyboardLiftsView())
         .disableAutocorrection(true)
@@ -125,6 +118,6 @@ struct StructClassObservableObject: View {
 struct StructClassObservableObject_Previews: PreviewProvider {
     static var previews: some View {
         StructClassObservableObject()
-//        .previewDevice("iPad Pro (11-inch)")
+        //        .previewDevice("iPad Pro (11-inch)")
     }
 }

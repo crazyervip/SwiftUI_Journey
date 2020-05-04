@@ -31,7 +31,7 @@ struct KeyboardLiftsView: ViewModifier {
         
 // 可增加弹起高度。 0至TextField处
         
-      rect.height + 0
+      rect.height + 50
     }.subscribe(Subscribers.Assign(object: self, keyPath: \.currentHeight))
 
     NotificationCenter.Publisher(
