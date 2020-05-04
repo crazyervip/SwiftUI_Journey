@@ -14,30 +14,30 @@ struct AddView: View {
     @ObservedObject var expenses: Expenses
 
     @State private var name = ""
-    @State private var type = "Personal"
+    @State private var type = "私人"
     @State private var amount = ""
 
     @State private var showingAlert = false
 
-    static let types = ["Business", "Personal"]
+    static let types = ["公/商务", "私人"]
 
     var body: some View {
         NavigationView {
             Form {
-                TextField("Name", text: $name)
+                TextField("名称", text: $name)
 
-                Picker("Type", selection: $type) {
+                Picker("种类", selection: $type) {
                     ForEach(Self.types, id: \String.self) {
                         Text($0)
                     }
                 }
 
-                TextField("Amount", text: $amount)
+                TextField("金额", text: $amount)
                     .keyboardType(.numberPad)
             }
-            .navigationBarTitle("Add new expense")
+            .navigationBarTitle("添加支出")
             .navigationBarItems(trailing:
-                Button("Save") {
+                Button("保存") {
                     if let actualAmount = Int(self.amount) {
                         let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
                         self.expenses.items.append(item)
@@ -50,7 +50,7 @@ struct AddView: View {
             )
         }
         .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Incorrect amount"), message: Text("Amount must be an integer"), dismissButton: .default(Text("OK")))
+            Alert(title: Text("金额不正确"), message: Text("必须为整数"), dismissButton: .default(Text("OK")))
         }
     }
 }

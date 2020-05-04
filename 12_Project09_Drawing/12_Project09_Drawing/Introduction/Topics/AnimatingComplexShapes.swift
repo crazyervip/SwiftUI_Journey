@@ -52,7 +52,6 @@ struct AnimatingComplexShapes: View {
 
     var body: some View {
         CheckerBoard(rows: rows, columns: columns)
-            // note: tap works on even squares only, the rest being empty space
             .onTapGesture {
                 withAnimation(.linear(duration: 3)) {
                     self.rows = 8

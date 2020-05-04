@@ -26,19 +26,22 @@ struct ContentView: View {
 
                         Spacer()
 
-                        Text("$\(item.amount)")
+                        Text("\(item.amount) 元")
                             .foregroundColor(self.color(forAmount: item.amount))
                     }
                 }
                 .onDelete(perform: removeItems)
             }
-            .navigationBarTitle("iExpense")
+            .navigationBarTitle("记账")
             .navigationBarItems(
                 leading: EditButton(), // challenge 1
                 trailing: Button(action: {
                     self.showingAddExpense = true
                 }) {
                     Image(systemName: "plus")
+                        .padding(7)
+                        .background(Color(.systemGray5))
+                        .clipShape(Circle())
                 }
             )
         }

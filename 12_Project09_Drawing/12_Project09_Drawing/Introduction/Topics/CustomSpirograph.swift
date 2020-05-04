@@ -10,7 +10,6 @@ import SwiftUI
 
 import SwiftUI
 
-// bonus: spirograph with animated transitions
 extension Spirograph {
     public var animatableData: AnimatablePair<Double, AnimatablePair<Double, AnimatablePair<Double, CGFloat>>> {
         get {
@@ -42,13 +41,12 @@ struct CustomSpirograph: View {
     @State private var animationDuration = 0.5
 
     var body: some View {
-        // since metal rendering clips the shape (contrary to core animation rendering),
-        // put drawing in a ZStack to draw behind the controls and take all the space
         ZStack {
             Spirograph(innerRadius: Int(self.innerRadius), outerRadius: Int(self.outerRadius), distance: Int(self.distance), amount: self.amount)
                 .stroke(Color(hue: self.hue, saturation: 1, brightness: 1), lineWidth: 1)
-                .drawingGroup() // improve randomize performance
-                .offset(CGSize(width: 0, height: -185)) // bump it up
+                // MARK: Metal
+                .drawingGroup()
+                .offset(CGSize(width: 0, height: -185))
 
             VStack(spacing: 0) {
                 Spacer()
@@ -57,7 +55,7 @@ struct CustomSpirograph: View {
                     Text("Inner radius: \(Int(innerRadius))")
                     HStack {
                         Slider(value: $innerRadius, in: 10...150, step: 1)
-                        // bonus: animated random values
+                        
                         Button(
                             action: { self.randomInnerRadius.toggle() },
                             label: { Image(systemName: randomInnerRadius ? "checkmark.square" : "square") }
@@ -68,7 +66,6 @@ struct CustomSpirograph: View {
                     Text("Outer radius: \(Int(outerRadius))")
                     HStack {
                         Slider(value: $outerRadius, in: 10...150, step: 1)
-                        // bonus: animated random values
                         Button(
                             action: { self.randomOuterRadius.toggle() },
                             label: { Image(systemName: randomOuterRadius ? "checkmark.square" : "square") }
@@ -79,7 +76,6 @@ struct CustomSpirograph: View {
                     Text("Distance: \(Int(distance))")
                     HStack {
                         Slider(value: $distance, in: 10...150, step: 1)
-                        // bonus: animated random values
                         Button(
                             action: { self.randomDistance.toggle() },
                             label: { Image(systemName: randomDistance ? "checkmark.square" : "square") }
@@ -90,7 +86,6 @@ struct CustomSpirograph: View {
                     Text("Amount: \(amount, specifier: "%.2f")")
                     HStack {
                         Slider(value: $amount)
-                        // bonus: animated random values
                         Button(
                             action: { self.randomAmount.toggle() },
                             label: { Image(systemName: randomAmount ? "checkmark.square" : "square") }
@@ -101,7 +96,6 @@ struct CustomSpirograph: View {
                     Text("Color")
                     HStack {
                         Slider(value: $hue)
-                        // bonus: animated random values
                         Button(
                             action: { self.randomColor.toggle() },
                             label: { Image(systemName: randomColor ? "checkmark.square" : "square") }
@@ -110,7 +104,6 @@ struct CustomSpirograph: View {
                     .padding([.horizontal])
                 }
 
-                // bonus: animated random values
                 HStack {
                     Button("Randomize") {
                         withAnimation(.linear(duration: self.animationDuration)) {

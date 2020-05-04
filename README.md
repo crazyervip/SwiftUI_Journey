@@ -649,7 +649,7 @@ struct CustomContainers: View {
 ```
 iPhone 8               | iPhone 11   
  :---:                |  :---:  
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/10.gif" style="zoom:33%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/9.gif" style="zoom:33%;" />
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/10.gif" style="zoom:100%;" /> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/04_Project03_ViewsAndModifiers/screenshots/9.gif" style="zoom:100%;" />
 
 
 
@@ -676,7 +676,7 @@ iPhone 8               | iPhone 11
 
  项目要点                                                     |                             图例                             
  :----------------------------------------------------------- | :----------------------------------------------------------: 
- <br/>\>1. *Replace each VStack in our form with a Section, where the text view is the title of the section. Do you prefer this layout or the VStack layout? It’s your app – you choose!*<br/><br/>\>2. *Replace the “Number of cups” stepper with a Picker showing the same range of values.*<br/><br/>\>3. *Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the “Calculate” button entirely.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/screen01.png" style="zoom:150%;" /> 
+ <br/>\>1. *Replace each VStack in our form with a Section, where the text view is the title of the section. Do you prefer this layout or the VStack layout? It’s your app – you choose!*<br/><br/>\>2. *Replace the “Number of cups” stepper with a Picker showing the same range of values.*<br/><br/>\>3. *Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the “Calculate” button entirely.*<br/> | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/screen01.png" style="zoom:100%;" /> 
 
 ### 🏷️标签：
 
@@ -687,7 +687,7 @@ iPhone 8               | iPhone 11
 
 实现               | 图例 
 :---                             |  :---:
-**`Create ML`, `DatePicker`, `DateComponents`, `DateFormatter`**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/1.gif"  style="zoom:50%;" /> 
+**`Create ML`, `DatePicker`, `DateComponents`, `DateFormatter`**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/06_Project04_BetterRest/screenshots/1.gif"  style="zoom:100%;" /> 
 
 自动控制小数点
 
@@ -716,9 +716,9 @@ iPhone 8               | iPhone 11
 
 实现               | 图例1 | 图例2
 :---                             |  :---: |  :---:
-**`.introspectTextField{}`, <br/>🔷`becomeFirstResponder`,<br/> `List`, `onAppear`, <br/>`Bundle`, `fatalError()`,<br/> `UITextChecker`, <br/>🔷`navigationBarItems`(避免键盘遮挡)**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/1.gif"  style="zoom:50%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/3.gif"  style="zoom:50%;" />
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/4.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/5.gif"  style="zoom:50%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/2.gif"  style="zoom:50%;" />
-<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/6.gif"  style="zoom:50%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/7.gif"  style="zoom:50%;" /> |
+**`.introspectTextField{}`, <br/>🔷`becomeFirstResponder`,<br/> `List`, `onAppear`, <br/>`Bundle`, `fatalError()`,<br/> `UITextChecker`, <br/>🔷`navigationBarItems`(避免键盘遮挡)**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/1.gif"  style="zoom:100%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/3.gif"  style="zoom:100%;" />
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/4.gif"  style="zoom:100%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/5.gif"  style="zoom:100%;" /> |<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/2.gif"  style="zoom:100%;" />
+<img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/6.gif"  style="zoom:100%;" />  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/07_Project05_WordScramble/screenshots/7.gif"  style="zoom:100%;" /> |
 
 ## 08_P6_Animations 和 Transitions
 
@@ -735,8 +735,8 @@ iPhone 8               | iPhone 11
 
 实现               | 图例 
 :---                             |  :---:
-**`rotation3DEffect`,  🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  🔷`scaleEffect` ,🔷抖动效果^2⃣️^**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:50%;" /> 
-**`.DragGesture()`**,**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:50%;" /> 
+**`rotation3DEffect`,  🔷三元运算符的嵌套^1⃣️^ `a ? b : (c ? d : e)`,  🔷`scaleEffect` ,🔷抖动效果^2⃣️^**  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/1.gif"  style="zoom:100%;" /> 
+**`.DragGesture()`**,**`.translation`**,  | <img src="https://no-more-coding.coding.net/p/SwiftUI-Journey/d/SwiftUI-Journey/git/raw/master/08_Project06_Animations/screenshots/2.gif"  style="zoom:100%;" /> 
 
 1⃣️
 
