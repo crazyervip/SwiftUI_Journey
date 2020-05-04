@@ -28,10 +28,10 @@ struct EditActivity: View {
             Stepper(
                 onIncrement: { self.updateActivity(by: 1) },
                 onDecrement: { self.updateActivity(by: -1) },
-                label: { Text("Completed \(activity.completedTimes) times") }
+                label: { Text("完成了 \(activity.completedTimes) 次") }
             )
         }
-        .navigationBarTitle("Edit Activity", displayMode: .inline)
+        .navigationBarTitle("编辑", displayMode: .inline)
     }
 
     func updateActivity(by change: Int) {

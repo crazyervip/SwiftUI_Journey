@@ -11,9 +11,10 @@ Paths, shapes, strokes, transforms, drawing groups, animating values, Core Anima
 ## Challenges
 
 From [Hacking with Swift](https://www.hackingwithswift.com/books/ios-swiftui/drawing-wrap-up):
->1. Add the launch date to MissionView, below the mission badge.
->2. Modify AstronautView to show all the missions this astronaut flew on.
->3. Make a bar button in ContentView that toggles between showing launch dates and showing crew names.
+>1. Create an Arrow shape made from a rectangle and a triangle – having it point straight up is fine.
+>2. Make the line thickness of your Arrow shape animatable.
+>3. Create a ColorCyclingRectangle shape that is the rectangular cousin of ColorCyclingCircle, allowing us to control the position of the gradient using a property.
+
 
 ## Screenshots
 

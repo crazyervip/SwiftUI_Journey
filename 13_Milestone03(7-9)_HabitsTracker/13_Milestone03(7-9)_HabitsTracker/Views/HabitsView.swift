@@ -24,11 +24,11 @@ struct HabitsView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                             HStack {
-                                Text("Completed")
+                                Text("完成了")
                                 Text("\(activity.completedTimes)")
                                     .padding(.horizontal, -5)
                                     .foregroundColor(activity.completedTimes > 0 ? .green : .red)
-                                Text("times")
+                                Text("次")
                             }
                             .font(.subheadline)
                         }
@@ -38,7 +38,7 @@ struct HabitsView: View {
                     self.habits.activities.remove(atOffsets: offsets)
                 }
             }
-            .navigationBarTitle("Habits")
+            .navigationBarTitle("习惯养成")
             .navigationBarItems(
                 leading: EditButton(),
                 trailing:
@@ -47,6 +47,9 @@ struct HabitsView: View {
                     }) {
                         Image(systemName: "plus")
                             // increase tap area size
+                            .padding(7)
+                            .background(Color(.systemGray5))
+                            .clipShape(Circle())
                             .frame(width: 44, height: 44)
                     }
             )
