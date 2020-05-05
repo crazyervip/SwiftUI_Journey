@@ -17,17 +17,19 @@ struct AddBookView: View {
     @State private var rating = 3
     @State private var genre = ""
     @State private var review = ""
-
-    let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
-
+    
+//    var genres: Genre
+    
+    let genres = ["奇幻", "恐怖", "儿童", "神秘", "诗歌", "浪漫", "惊悚","未知"]
+    
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Name of book", text: $title)
-                    TextField("Author's name", text: $author)
+                    TextField("书名（必填）", text: $title)
+                    TextField("作者", text: $author)
 
-                    Picker("Genre", selection: $genre) {
+                    Picker("类型", selection: $genre) {
                         ForEach(genres, id: \.self) {
                             Text($0)
                         }
@@ -36,11 +38,11 @@ struct AddBookView: View {
 
                 Section {
                     RatingView(rating: $rating)
-                    TextField("Write a review", text: $review)
+                    TextField("写书评", text: $review)
                 }
 
                 Section {
-                    Button("Save") {
+                    Button("保存") {
                         let newBook = Book(context: self.moc)
                         newBook.title = self.title
                         newBook.author = self.author
@@ -55,9 +57,10 @@ struct AddBookView: View {
 
                         self.presentationMode.wrappedValue.dismiss()
                     }
+                    .disabled(title == "" ? true : false)
                 }
             }
-            .navigationBarTitle("Add Book")
+            .navigationBarTitle("添加书籍")
         }
     }
 }

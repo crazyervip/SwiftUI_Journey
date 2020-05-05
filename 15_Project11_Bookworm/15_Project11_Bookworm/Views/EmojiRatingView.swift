@@ -10,24 +10,38 @@ import SwiftUI
 
 struct EmojiRatingView: View {
     let rating: Int16
-
+    
     var body: some View {
         switch rating {
         case 1:
-            return Image(systemName: "cloud.rain.fill")
-                .foregroundColor(Color.red.opacity(0.2))
+            return
+                Text("🤬")
+            //                Image(systemName: "cloud.rain.fill")
+        //                .foregroundColor(Color.red.opacity(0.2))
         case 2:
-            return Image(systemName: "cloud.fill")
-                .foregroundColor(Color.red.opacity(0.4))
+            return
+                Text("😤")
+            
+            //                Image(systemName: "cloud.fill")
+        //                .foregroundColor(Color.red.opacity(0.4))
         case 3:
-            return Image(systemName: "cloud.sun.fill")
-                .foregroundColor(Color.orange.opacity(0.6))
+            return
+                Text("😐")
+            
+            //                Image(systemName: "cloud.sun.fill")
+        //                .foregroundColor(Color.orange.opacity(0.6))
         case 4:
-            return Image(systemName: "sun.min.fill")
-                .foregroundColor(Color.yellow.opacity(0.8))
+            return
+                Text("😌")
+            
+            //                Image(systemName: "sun.min.fill")
+        //                .foregroundColor(Color.yellow.opacity(0.8))
         default:
-            return Image(systemName: "sun.max.fill")
-                .foregroundColor(Color.yellow.opacity(1))
+            return
+                Text("😎")
+            
+            //                Image(systemName: "sun.max.fill")
+            //                .foregroundColor(Color.yellow.opacity(1))
         }
     }
 }

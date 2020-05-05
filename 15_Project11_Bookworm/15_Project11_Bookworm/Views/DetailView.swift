@@ -19,8 +19,8 @@ struct DetailView: View {
 
     // challenge 1
     var genreName: String {
-        guard let genre = book.genre else { return "Unknown" }
-        guard !genre.isEmpty else { return "Unknown" }
+        guard let genre = book.genre else { return "未知" }
+        guard !genre.isEmpty else { return "未知" }
 
         return genre
     }
@@ -30,7 +30,7 @@ struct DetailView: View {
         guard let date = book.date else { return "" }
         let formatter = DateFormatter()
         formatter.dateStyle = .long
-        return "Reviewed on \(formatter.string(from: date))"
+        return "\(formatter.string(from: date)) 添加评论"
     }
 
     var body: some View {
@@ -52,11 +52,11 @@ struct DetailView: View {
                         .offset(x: -5, y: -5)
                 }
 
-                Text(self.book.author ?? "Unknown author")
+                Text(self.book.author ?? "未知作者")
                     .font(.title)
                     .foregroundColor(.secondary)
 
-                Text(self.book.review ?? "No review")
+                Text(self.book.review ?? "暂无评论")
                     .padding()
 
                 RatingView(rating: .constant(Int(self.book.rating)))
@@ -69,16 +69,16 @@ struct DetailView: View {
                     .padding()
             }
         }
-        .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
+        .navigationBarTitle(Text(book.title ?? "未知标题"), displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {
             self.showingDeleteAlert = true
         }) {
             Image(systemName: "trash")
         })
         .alert(isPresented: $showingDeleteAlert) {
-            Alert(title: Text("Delete book"),
-                  message: Text("Are you sure?"),
-                  primaryButton: .destructive(Text("Delete")) { self.deleteBook() },
+            Alert(title: Text("删除此书"),
+                  message: Text("确定吗？"),
+                  primaryButton: .destructive(Text("删除")) { self.deleteBook() },
                   secondaryButton: .cancel()
             )
         }
@@ -96,15 +96,15 @@ struct DetailView_Previews: PreviewProvider {
 
     static var previews: some View {
         let book = Book(context: moc)
-        book.title = "Test book"
-        book.author = "Test author"
-        book.genre = "Fantasy"
+        book.title = "测试标题"
+        book.author = "测试作者"
+        book.genre = "奇幻"
         book.rating = 4
-        book.review = "This was a great book; I really enjoyed it."
+        book.review = "真香"
 
         return NavigationView {
             DetailView(book: book)
         }
-        .colorScheme(.dark)
+//        .colorScheme(.dark)
     }
 }

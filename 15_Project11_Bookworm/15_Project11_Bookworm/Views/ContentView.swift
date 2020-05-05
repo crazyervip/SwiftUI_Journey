@@ -26,22 +26,25 @@ struct ContentView: View {
                             .font(.largeTitle)
 
                         VStack(alignment: .leading) {
-                            Text(book.title ?? "Unknown Title")
+                            Text(book.title ?? "标题未知")
                                 .font(.headline)
                                 // challenge 2
                                 .foregroundColor(book.rating == 1 ? Color.red : .primary)
-                            Text(book.author ?? "Unknown Author")
+                            Text(book.author ?? "作者未知")
                                 .foregroundColor(.secondary)
                         }
                     }
                 }
                 .onDelete(perform: deleteBooks)
             }
-            .navigationBarTitle("Bookworm")
+            .navigationBarTitle("我的书集")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
                 self.showingAddScreen.toggle()
             }) {
                 Image(systemName: "plus")
+                    .padding(7)
+                    .background(Color(.systemGray5))
+                    .clipShape(Circle())
             })
             .sheet(isPresented: $showingAddScreen) {
                 AddBookView().environment(\.managedObjectContext, self.moc)

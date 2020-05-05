@@ -24,7 +24,8 @@ struct AddressView: View {
 
             Section {
                 NavigationLink(destination: CheckoutView(oo: oo)){
-                    Text("确定").foregroundColor(oo.order.hasValidAddress == false ? nil : Color(.systemBlue))
+                    Text("确定")
+                        .foregroundColor(oo.order.hasValidAddress == false ? nil : Color(.systemBlue))
                 }
                 .disabled(oo.order.hasValidAddress == false)
                 
