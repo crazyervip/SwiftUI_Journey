@@ -17,9 +17,7 @@ struct AddBookView: View {
     @State private var rating = 3
     @State private var genre = ""
     @State private var review = ""
-    
-//    var genres: Genre
-    
+        
     let genres = ["奇幻", "恐怖", "儿童", "神秘", "诗歌", "浪漫", "惊悚","未知"]
     
     var body: some View {
