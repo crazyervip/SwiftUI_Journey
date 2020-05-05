@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283404842461037E0070A7B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		283E0022245EBECE002F2BE8 /* 11_Project08_Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_Project08_Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283E0025245EBECE002F2BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283E0027245EBECE002F2BE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,8 +77,8 @@
 			children = (
 				2891D914245EBF8100522E43 /* JSON_Data */,
 				283E0025245EBECE002F2BE8 /* AppDelegate.swift */,
-				2891D91B245EC14300522E43 /* Model */,
 				283E0027245EBECE002F2BE8 /* SceneDelegate.swift */,
+				2891D91B245EC14300522E43 /* Model */,
 				2891D920245EC39000522E43 /* Views */,
 				283E002B245EBED1002F2BE8 /* Assets.xcassets */,
 				283E0030245EBED1002F2BE8 /* LaunchScreen.storyboard */,
@@ -166,6 +167,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 283E0019245EBECE002F2BE8;
 			productRefGroup = 283E0023245EBECE002F2BE8 /* Products */;
@@ -215,6 +217,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				283E0031245EBED1002F2BE8 /* Base */,
+				283404842461037E0070A7B1 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -286,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

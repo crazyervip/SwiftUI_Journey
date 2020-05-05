@@ -30,7 +30,7 @@ class ObservableOrder: ObservableObject {
 
 // challenge 3
 struct Order: Codable {
-    static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
+    static let types = ["香草", "草莓", "巧克力", "蓝莓"]
 
     var type = 0
     var quantity = 3
@@ -65,20 +65,16 @@ struct Order: Codable {
     }
 
     var cost: Double {
-        // $2 per cake
-        var cost = Double(quantity) * 2
+        var cost = Double(quantity) * 5
 
-        // complicated cakes cost more
-        cost += (Double(type) / 2)
+//        cost += (Double(type) / 2)
 
-        // $1/cake for extra frosting
         if extraFrosting {
             cost += Double(quantity)
         }
 
-        // $0.50/cake for sprinkles
         if addSprinkles {
-            cost += Double(quantity) / 2
+            cost += Double(quantity)
         }
 
         return cost

@@ -45,7 +45,6 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.7)
                         .padding(.top)
 
-                    // challenge 1
                     Text(self.mission.formattedLaunchDate)
                         .font(.headline)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -78,6 +77,8 @@ struct MissionView: View {
                                 }
 
                                 Spacer()
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(.secondary)
                             }
                             .padding(.horizontal)
                         }

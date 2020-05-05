@@ -38,12 +38,15 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Moonshot")
+            .navigationBarTitle("登月计划")
             .navigationBarItems(trailing:
                 Button(action: {
                     self.showDate.toggle()
                 }, label: {
-                    Text("Show \(self.showDate ? "crew" : "date")")
+                    HStack {
+                        Image(systemName: "arrow.down")
+                        Text("\(self.showDate ? "日期" : "成员")")
+                    }
                 })
             )
         }

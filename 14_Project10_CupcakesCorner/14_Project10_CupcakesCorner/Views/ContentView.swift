@@ -15,36 +15,36 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
-                    Picker("Select your cake type", selection: $oo.order.type) {
+                    Picker("选择蛋糕类型", selection: $oo.order.type) {
                         ForEach(0..<Order.types.count, id: \.self) {
                             Text(Order.types[$0])
                         }
                     }
 
                     Stepper(value: $oo.order.quantity, in: 3...20) {
-                        Text("Number of cakes: \(oo.order.quantity)")
+                        Text("数量: \(oo.order.quantity)")
                     }
                 }
 
                 Section {
                     Toggle(isOn: $oo.order.specialRequestEnabled.animation()) {
-                        Text("Any special requests?")
+                        Text("加辅料?")
                     }
 
                     if oo.order.specialRequestEnabled {
                         Toggle(isOn: $oo.order.extraFrosting) {
-                            Text("Add extra frosting")
+                            Text("奶油")
                         }
 
                         Toggle(isOn: $oo.order.addSprinkles) {
-                            Text("Add extra sprinkles")
+                            Text("巧克力屑")
                         }
                     }
                 }
 
                 Section {
                     NavigationLink(destination: AddressView(oo: oo)) {
-                        Text("Delivery details")
+                        Text("送餐详情")
                     }
                 }
             }

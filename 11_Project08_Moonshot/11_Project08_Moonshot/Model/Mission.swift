@@ -22,7 +22,7 @@ struct Mission: Codable, Identifiable {
     let description: String
 
     var displayName: String {
-        "Apollo \(id)"
+        "阿波罗 \(id)"
     }
 
     var image: String {
@@ -48,7 +48,7 @@ struct Mission: Codable, Identifiable {
                 crewNames += match.name + String(separator)
             }
             else {
-                fatalError("Crew member \(member.name) not found")
+                fatalError("无法找到成员：\(member.name)")
             }
         }
         return String(crewNames.dropLast())

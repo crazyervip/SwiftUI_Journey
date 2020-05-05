@@ -18,6 +18,8 @@ struct CheckoutView: View {
     @ObservedObject var oo: ObservableOrder
 
     @State private var confirmationMessage = ""
+    
+    @State private var extra = "无"
 
     // challenge 2
     @State private var showingAlert = false
@@ -33,32 +35,32 @@ struct CheckoutView: View {
                         .scaledToFit()
                         .frame(width: geometry.size.width)
 
-                    Text("Your total is $\(self.oo.order.cost, specifier: "%.2f")")
+                    Text("订单总额为 \(self.oo.order.cost, specifier: "%.2f") 元")
                         .font(.title)
 
-                    Button("Place Order") {
+                    Button("下单") {
                         self.placeOrder()
                     }
                     .padding()
                 }
             }
         }
-        .navigationBarTitle("Check out", displayMode: .inline)
+        .navigationBarTitle("确定订单", displayMode: .inline)
         // challenge 2
         .alert(isPresented: $showingAlert) { () -> Alert in
             switch alertType {
             case .confirmation:
-                return Alert(title: Text("Thank you!"), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
+                return Alert(title: Text("感谢你！"), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
             case .error:
-                return Alert(title: Text("Error!"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+                return Alert(title: Text("出错了!"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
         }
     }
 
     func placeOrder() {
         guard let encoded = try? JSONEncoder().encode(oo.order) else {
-            // challenge 2
-            self.show(error: "Failed to encode order")
+            // challenge 2 encode
+            self.show(error: "无法上传订单")
             return
         }
 
@@ -71,13 +73,21 @@ struct CheckoutView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {
                 // challenge 2
-                self.show(error: "No data in response: \(error?.localizedDescription ?? "Unknown error")")
+                self.show(error: "无数据回应: \(error?.localizedDescription ?? "未知错误")")
                 return
             }
 
             if let decodedOrder = try? JSONDecoder().decode(Order.self, from: data) {
                 // challenge 2
-                self.show(confirmation: "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!")
+                if decodedOrder.addSprinkles && !decodedOrder.extraFrosting {
+                    self.extra = "巧克力屑"
+                } else if !decodedOrder.addSprinkles && decodedOrder.extraFrosting {
+                    self.extra = "奶油"
+                } else if decodedOrder.addSprinkles && decodedOrder.extraFrosting {
+                    self.extra = "奶油，巧克力屑"
+                }
+                
+                self.show(confirmation: "你的 \(decodedOrder.quantity) 个  \(Order.types[decodedOrder.type])蛋糕\n(辅料：\(self.extra))\n将马上送达")
             }
             else {
                 // challenge 2

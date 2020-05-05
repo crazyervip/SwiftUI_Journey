@@ -8,7 +8,7 @@
 
 import Foundation
 
-// replaced by Order in challenge 3
+// 在 challenge 3 以 strcut 呈现
 
 enum OldOrderCodingKeys: CodingKey {
     case type
@@ -22,7 +22,7 @@ enum OldOrderCodingKeys: CodingKey {
 }
 
 class OldOrder: ObservableObject, Codable {
-    static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
+    static let types = ["香草", "草莓", "巧克力", "蓝莓"]
 
     @Published var type = 0
     @Published var quantity = 3
@@ -48,7 +48,7 @@ class OldOrder: ObservableObject, Codable {
             return false
         }
 
-        // challenge 1
+        //MARK: challenge 1
         if name.isAllSpaces || streetAddress.isAllSpaces || city.isAllSpaces || zip.isAllSpaces {
             return false
         }
@@ -57,20 +57,16 @@ class OldOrder: ObservableObject, Codable {
     }
 
     var cost: Double {
-        // $2 per cake
-        var cost = Double(quantity) * 2
+        var cost = Double(quantity) * 5
 
-        // complicated cakes cost more
-        cost += (Double(type) / 2)
+//        cost += (Double(type) / 2)
 
-        // $1/cake for extra frosting
         if extraFrosting {
             cost += Double(quantity)
         }
 
-        // $0.50/cake for sprinkles
         if addSprinkles {
-            cost += Double(quantity) / 2
+            cost += Double(quantity)
         }
 
         return cost

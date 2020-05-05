@@ -15,21 +15,22 @@ struct AddressView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Name", text: $oo.order.name)
-                TextField("Street Address", text: $oo.order.streetAddress)
-                TextField("City", text: $oo.order.city)
-                TextField("Zip", text: $oo.order.zip)
+                TextField("姓名", text: $oo.order.name)
+                TextField("街道地址", text: $oo.order.streetAddress)
+                TextField("城市", text: $oo.order.city)
+                TextField("邮编", text: $oo.order.zip)
 
             }
 
             Section {
                 NavigationLink(destination: CheckoutView(oo: oo)){
-                    Text("Checkout")
+                    Text("确定").foregroundColor(oo.order.hasValidAddress == false ? nil : Color(.systemBlue))
                 }
                 .disabled(oo.order.hasValidAddress == false)
+                
             }
         }
-        .navigationBarTitle("Delivery details", displayMode: .inline)
+        .navigationBarTitle("送餐详情", displayMode: .inline)
     }
 }
 
