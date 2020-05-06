@@ -1,0 +1,6 @@
+module Pods_18_Project13_Instafilter {
+  umbrella header "Pods-18_Project13_Instafilter-umbrella.h"
+
+  export *
+  module * { export * }
+}
