@@ -1,9 +1,9 @@
 //
 //  ImagePicker.swift
-//  Project13
+//  18_Project13_Instafilter
 //
-//  Created by clarknt on 2019-12-04.
-//  Copyright © 2019 clarknt. All rights reserved.
+//  Created by Jacob Zhang on 2020/5/5.
+//  Copyright © 2020 Jacob Zhang. All rights reserved.
 //
 
 import SwiftUI

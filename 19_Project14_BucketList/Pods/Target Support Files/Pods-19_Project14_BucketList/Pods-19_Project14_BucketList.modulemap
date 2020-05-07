@@ -1,0 +1,6 @@
+module Pods_19_Project14_BucketList {
+  umbrella header "Pods-19_Project14_BucketList-umbrella.h"
+
+  export *
+  module * { export * }
+}
