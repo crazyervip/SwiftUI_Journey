@@ -8,29 +8,35 @@
 
 import SwiftUI
 
-struct ImagePicker: UIViewControllerRepresentable {
-
+struct ImagePicker {
     @Environment(\.presentationMode) var presentationMode
     @Binding var image: UIImage?
-
     @Binding var sourceType: UIImagePickerController.SourceType
+}
 
+extension ImagePicker: UIViewControllerRepresentable {
 
-    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
+    /// Creates a `UIViewController` instance to be presented.
+    func makeUIViewController(context: Self.Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
-        picker.sourceType = sourceType
         picker.delegate = context.coordinator
+        picker.sourceType = sourceType
         return picker
     }
 
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker>) {
+
+    /// Updates the presented `UIViewController` (and coordinator) to the latest
+    /// configuration.
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Self.Context) {
 
     }
 
-    func makeCoordinator() -> ImagePicker.Coordinator {
+    /// `Coordinator` can be accessed via `Context`.
+    func makeCoordinator() -> Self.Coordinator {
         Coordinator(self)
     }
 
+    /// A type to coordinate with the `UIViewController`.
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
         let parent: ImagePicker
 
@@ -38,7 +44,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             self.parent = parent
         }
 
-        // 解决相机取图，图片方向颠倒问题 https://stackoverflow.com/questions/8915630
+        // UIImagePickerControllerDelegate
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             
             if let uiImage = info[.originalImage] as? UIImage {
@@ -48,7 +54,9 @@ struct ImagePicker: UIViewControllerRepresentable {
             parent.presentationMode.wrappedValue.dismiss()
         }
 
-        // 解决相机取图，图片方向颠倒问题 https://stackoverflow.com/questions/8915630
+        // UIImage does not handle orientation in a way that is suitable
+        // for using in an Image. Force writing the image correctly oriented.
+        // More info here: https://stackoverflow.com/questions/8915630
         private func fixImageOrientation(for image: UIImage) -> UIImage {
             UIGraphicsBeginImageContext(image.size)
             image.draw(at: .zero)

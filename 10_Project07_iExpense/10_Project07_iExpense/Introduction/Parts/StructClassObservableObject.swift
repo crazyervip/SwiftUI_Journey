@@ -29,7 +29,7 @@ struct StructClassObservableObject: View {
     @State var user2 = User2()
     
     @ObservedObject var user3 = User3()
-    
+        
     var body: some View {
         VStack {
             GeometryReader { gr1 in

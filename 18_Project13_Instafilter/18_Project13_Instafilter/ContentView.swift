@@ -104,7 +104,7 @@ struct ContentView: View {
                                             
                                         }) {
                                             Image(systemName: "camera")
-                                                .opacity(0.7)
+                                                .opacity(0.8)
                                                 .font(.system(size: 100, weight: .bold, design: .rounded))
                                         }
                                         Spacer()
@@ -114,7 +114,7 @@ struct ContentView: View {
                                             
                                         }) {
                                             Image(systemName: "photo")
-                                                .opacity(0.7)
+                                                .opacity(0.8)
                                                 .font(.system(size: 100, weight: .bold, design: .rounded))
                                         }
                                         Spacer()
@@ -311,7 +311,7 @@ struct placeholderImage: View {
         Rectangle()
             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.05)))
             //            .frame(width: 380, height: 380)
-            .background(ColorfulGradient().opacity(0.4))
+            .background(ColorfulGradient().opacity(0.1))
             .cornerRadius(20)
             .shadow(radius: 5, x: 0, y: 5)
     }
