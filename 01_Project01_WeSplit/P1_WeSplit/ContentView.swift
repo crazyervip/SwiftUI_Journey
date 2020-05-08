@@ -84,8 +84,6 @@ struct ContentView: View {
                 }
                 Section(header: Text("总金额 + 小费")) {
                     Text("\(grandTotal, specifier: "%.2f") 元")
-                        // MARK: Project03_challenge2
-//                        .foregroundColor(self.tipPercentages[self.tipPercentage] == 0 ? Color.red : Color.primary)
                 }
                 Section(header: Text("人均")) {
                     // 显示 `Double` 两位小数的方法
