@@ -138,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				28C290F4246572BB0099F876 /* LocationFetcher.swift */,
-				28C2908D246551700099F876 /* File */,
 				28C2908F246551700099F876 /* Person.swift */,
 				28C29090246551710099F876 /* Implementation.swift */,
+				28C2908D246551700099F876 /* File */,
 				28C29091246551710099F876 /* CoreData */,
 				28C29097246551710099F876 /* Utils */,
 			);

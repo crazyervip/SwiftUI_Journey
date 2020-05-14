@@ -1,10 +1,10 @@
 ////
 ////  CheckoutView.swift
-////  13_Project10_CupcakesCorner
+////  14_Project10_CupcakesCorner
 ////
-////  Created by Jacob Zhang on 2020/5/3.
+////  Created by Jacob Zhang on 2020/5/4.
 ////  Copyright © 2020 Jacob Zhang. All rights reserved.
-////
+//
 //
 //import SwiftUI
 //
@@ -18,7 +18,7 @@
 //    @ObservedObject var oo: ObservableOrder
 //
 //    @State private var confirmationMessage = ""
-//    
+//
 //    @State private var extra = "无"
 //
 //    // challenge 2
@@ -86,7 +86,7 @@
 //                } else if decodedOrder.addSprinkles && decodedOrder.extraFrosting {
 //                    self.extra = "奶油，巧克力屑"
 //                }
-//                
+//
 //                self.show(confirmation: "你的 \(decodedOrder.quantity) 个  \(Order.types[decodedOrder.type])蛋糕\n(辅料：\(self.extra))\n将马上送达")
 //            }
 //            else {

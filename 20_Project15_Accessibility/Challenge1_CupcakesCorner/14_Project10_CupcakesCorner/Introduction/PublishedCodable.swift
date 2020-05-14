@@ -1,9 +1,9 @@
 //
 //  ContentView.swift
-//  Project10
+//  14_Project10_CupcakesCorner
 //
-//  Created by clarknt on 2019-11-11.
-//  Copyright © 2019 clarknt. All rights reserved.
+//  Created by Jacob Zhang on 2020/5/4.
+//  Copyright © 2020 Jacob Zhang. All rights reserved.
 //
 
 import SwiftUI
