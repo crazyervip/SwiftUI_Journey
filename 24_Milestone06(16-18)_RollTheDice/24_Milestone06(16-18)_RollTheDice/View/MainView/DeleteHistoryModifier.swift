@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-/// Shows an ActionSheet on phones, an Alert on tablets
+/// Shows an ActionSheet on iPhones, an Alert on iPads
 /// (ActionSheet is not working on ipad due to a SwiftUI bug)
 struct DeleteHistoryModifier: ViewModifier {
     @Binding var showingAction: Bool
