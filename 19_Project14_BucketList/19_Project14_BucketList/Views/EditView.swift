@@ -10,8 +10,6 @@ import MapKit
 import SwiftUI
 import SDWebImageSwiftUI
 
-
-
 enum LoadingState {
     case loading, loaded, failed
 }
